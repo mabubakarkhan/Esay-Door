@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seller Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div class="seller-header">
+			<div class="fluid-container">
+				<a class="seller-logo">
+					<img src="images/logo.png" alt="logo">
+				</a>
+				<div class="right-panel">
+					<a class="email" href="mailto:info@easydoor.com">info@easydoor.com</a>
+					<a class="access" href="#">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+						Easy Access
+						<i class="fa fa-sort-desc" aria-hidden="true"></i>
+					</a>
+				</div> 
+			</div>    
+		</div>
+		<div class="dashbord-content">
+			<div class="left-bar">
+				<div id="accordion" class="myaccordion">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				        	<img src="images/bg-dashboard.png">
+				        	Dashboard
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				    	<div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Dashboard</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        	<img src="images/bg-product.png" alt="image">
+				          	Products
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Manage Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Add Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Media Center</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Manage image</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				        	<img src="images/bg-promotions.png" alt="image">
+				          	Promotions
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				          <li class="nav-item">
+								<a class="nav-link" href="#">Plateform campaign</a>
+							</li>
+				          <li class="nav-item">
+								<a class="nav-link"href="#">Voucher campaign</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree1">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+				        	<img src="images/bg-finance.png" alt="image">
+				          	Finance
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Account statements</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Order overview</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Transaction overview</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree11">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link show active" data-toggle="collapse" data-target="#collapseThree11" aria-expanded="true" aria-controls="collapseThree11">
+				        	<img src="images/bg-account.png" alt="image">
+				          	Account & Settings
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree11" class="collapse show active" aria-labelledby="headingThree11" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link show active" href="#">Profile</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">User Management</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Account settings</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Chat settings</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="tab-content" id="myTabContent">
+				
+				<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+			  	<div class="p-holder">
+			  		<h1>Profile</h1>
+			  		<div class="p-tabs">
+			  			<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="General-tab" data-toggle="tab" href="#General" role="tab" aria-controls="General" aria-selected="true">General</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Logo-tab" data-toggle="tab" href="#Logo" role="tab" aria-controls="Logo" aria-selected="false">Logo</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Commissions-tab" data-toggle="tab" href="#Commissions" role="tab" aria-controls="Commissions" aria-selected="false">Commissions</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Delivery-tab" data-toggle="tab" href="#Delivery" role="tab" aria-controls="Delivery" aria-selected="false">Delivery Options</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Shipping-tab" data-toggle="tab" href="#Shipping" role="tab" aria-controls="Shipping" aria-selected="false">Shipping Provider</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Invoice-tab" data-toggle="tab" href="#Invoice" role="tab" aria-controls="Invoice" aria-selected="false">Invoice Number</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContentt">
+						<div class="tab-pane fade show active" id="General" role="tabpanel" aria-labelledby="General-tab">
+							<div class="inner-tabs">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="nested-home-tab" data-toggle="tab" href="#nestedHome" role="tab" aria-controls="home" aria-selected="true">Seller Account</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-profile-tab" data-toggle="tab" href="#nestedProfile" role="tab" aria-controls="profile" aria-selected="false">  Business Information</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-contact-tab" data-toggle="tab" href="#nestedContact" role="tab" aria-controls="contact" aria-selected="false">Bank Account</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Address-tab" data-toggle="tab" href="#nestedAddress" role="tab" aria-controls="Address" aria-selected="false">Warehouse Address</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Return-tab" data-toggle="tab" href="#nestedReturn" role="tab" aria-controls="contact" aria-selected="false">Return Address</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="nestedHome" role="tabpanel" aria-labelledby="home-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>ID Seller <em>*</em></label>
+												<input type="text" disabled="disabled" placeholder="PK2BNUJYD1">
+											</div>
+											<div class="seller-row">
+												<label>First and Last Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Email <em>*</em></label>
+												<input type="email">
+											</div>
+											<div class="seller-row">
+												<label>Mobile Number <em>*</em></label>
+												<input type="tel">
+											</div>
+											<div class="seller-row">
+												<label>Display Name / Shop Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Holiday Mode <em>*</em></label>
+												<div class="radio-box">
+													<input type="radio" id="yes" name="radio-group">
+					    							<label for="yes">Yes</label>
+					    						</div>
+												<div class="radio-box">
+													<input type="radio" id="no" name="radio-group">
+					    							<label for="no">No</label>
+					    						</div>
+											</div>
+											<div class="seller-row">
+												<label>Holiday Mode Period <em>*</em></label>
+												<div id="datetimepicker1" class="input-append date">
+											      <input class="calander" data-format="dd/MM/yyyy hh:mm:ss" type="text" placeholder="Select Date Time">
+											      <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+											    </div>      
+											</div>
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedProfile" role="tabpanel" aria-labelledby="profile-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>Legal Name / Business Owner <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Address <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Country / Region <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Person in Charge</label>
+												<input type="tel">
+											</div>
+											<div class="seller-row">
+												<label>Business Registration Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Upload Business Document</label>
+												<input type="file" name="">
+											</div>
+											<div class="seller-row">
+												<label>State <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Area <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Location <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Person in Charge Mobile Number</label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Person in Charge Email</label>
+												<input type="text">
+											</div>
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedContact" role="tabpanel" aria-labelledby="contact-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>Account Title <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Account Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Bank Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Branch Code <em>*</em></label>
+												<input type="tel">
+											</div>
+											<div class="seller-row">
+												<label>IBAN</label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Upload Cheque Copy <em>*</em></label>
+												<input type="file">
+											</div>
+											<div class="seller-row">
+												<label>Tax Category</label>
+												<input type="text">
+											</div>
+											
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedAddress" role="tabpanel" aria-labelledby="Address-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>First and Last Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Address <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Mobile Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Email <em>*</em></label>
+												<input type="email">
+											</div>
+											<div class="seller-row">
+												<label>Country/ Region</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>State</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Area</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Location</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedReturn" role="tabpanel" aria-labelledby="Return-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>Holiday Mode <em>*</em></label>
+												<div class="radio-box">
+													<input type="radio" id="yes" name="radio-group">
+					    							<label for="yes">Yes</label>
+					    						</div>
+												<div class="radio-box">
+													<input type="radio" id="no" name="radio-group">
+					    							<label for="no">No</label>
+					    						</div>
+											</div>
+											<div class="seller-row">
+												<label>First and Last Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Address <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Mobile Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Email <em>*</em></label>
+												<input type="email">
+											</div>
+											<div class="seller-row">
+												<label>Country/ Region</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>State</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Area</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Location</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="Logo" role="tabpanel" aria-labelledby="Logo-tab">
+							<div class="logo-content">
+
+								<input type='file' onchange="readURL(this);" />
+								<div class="blah-holder">
+									<span>Current Logo</span>
+									<img id="blah" src="" alt="your image" />
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="Commissions" role="tabpanel" aria-labelledby="Commissions-tab">
+							<div class="commission-holder">
+								<div class="container" id="no-more-tables">
+								  <p>&nbsp;</p>
+								  <table class="table">
+								    <thead>
+								      <tr class="active">
+								        <th class="col-xs-2"><strong></strong></th>
+								        <th class="col-xs-2"><strong>Category</strong></th>
+								        <th class="col-xs-6"><strong>Commission</strong></th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr role="button" data-toggle="collapse" href="#tr-1" aria-expanded="false" aria-controls="tr-1">
+								        <td>+1</td>
+								        <td>Root Category</td>
+								        <td>2.65</td>
+								      </tr>
+								      <tr>
+								        <td colspan="12" class="hiddenRow">
+								          <div class="collapse next-table" id="tr-1">
+								            <table class="table table-nested">
+								            	<thead>
+											      <tr>
+											        <th>1</th>
+											        <th>Category</th>
+											        <th>Commission</th>
+											      </tr>
+											    </thead>
+								              <tbody>
+
+								                <tr role="button" data-toggle="collapse" href="#tr-1-1" aria-expanded="false" aria-controls="tr-1-1">
+								                	<td>+</td>
+								                  <td class="col-xs-4 col-sm-2 active">11111griculture</td>
+								                  <td>2.65</td>
+								                </tr>
+
+								                <tr><!--2nd level table -->
+											        <td colspan="12" class="hiddenRow">
+											          <div class="collapse next-table" id="tr-1-1">
+											            <table class="table table-nested">
+											            	<thead>
+														      <tr>
+														        <th></th>
+														        <th>Category</th>
+														        <th>Commission</th>
+														      </tr>
+														    </thead>
+											              <tbody>
+											                <tr role="button" data-toggle="collapse" href="#tr-1-2" aria-expanded="false" aria-controls="tr-1-2">
+											                	<td>+</td>
+											                  <td class="col-xs-4 col-sm-2 active">2222Agriculture</td>
+											                  <td>2.65</td>
+											                </tr>
+
+											                <tr><!--third level table -->
+														        <td colspan="12" class="hiddenRow">
+														          <div class="collapse next-table" id="tr-1-2">
+														            <table class="table table-nested">
+														            	<thead>
+																	      <tr>
+																	        <th></th>
+																	        <th>333Category</th>
+																	        <th>Commission</th>
+																	      </tr>
+																	    </thead>
+														              <tbody>
+														                <tr role="button" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="">
+														                	<td>+</td>
+														                  	<td class="col-xs-4 col-sm-2">333</td>
+														                  	<td>2.65</td>
+														                </tr>
+														              </tbody>
+														            </table>
+														          </div>
+														        </td>
+														      </tr><!--third level table -->
+
+											              </tbody>
+											            </table>
+											          </div>
+											        </td>
+											      </tr><!--2nd level table -->
+											      
+								              </tbody>
+								            </table>
+								          </div>
+								        </td>
+								      </tr>
+
+								       <tr role="button" data-toggle="collapse" href="#tr-2" aria-expanded="false" aria-controls="tr-2">
+								        <td>+2</td>
+								        <td>Root Category</td>
+								        <td>2.65</td>
+								      </tr>
+								      <tr>
+								        <td colspan="12" class="hiddenRow">
+								          <div class="collapse next-table" id="tr-2">
+								            <table class="table table-nested">
+								            	<thead>
+											      <tr>
+											        <th>2</th>
+											        <th>Category</th>
+											        <th>Commission</th>
+											      </tr>
+											    </thead>
+								              <tbody>
+
+								                <tr role="button" data-toggle="collapse" href="#tr-2-1" aria-expanded="false" aria-controls="tr-2-1">
+								                	<td>+</td>
+								                  <td class="col-xs-4 col-sm-2 active">11111griculture</td>
+								                  <td>2.65</td>
+								                </tr>
+
+								                <tr><!--2nd level table -->
+											        <td colspan="12" class="hiddenRow">
+											          <div class="collapse next-table" id="tr-2-1">
+											            <table class="table table-nested">
+											            	<thead>
+														      <tr>
+														        <th></th>
+														        <th>Category</th>
+														        <th>Commission</th>
+														      </tr>
+														    </thead>
+											              <tbody>
+											                <tr role="button" data-toggle="collapse" href="#tr-2-2" aria-expanded="false" aria-controls="tr-2-2">
+											                	<td>+</td>
+											                  <td class="col-xs-4 col-sm-2 active">2222Agriculture</td>
+											                  <td>2.65</td>
+											                </tr>
+
+											                <tr><!--third level table -->
+														        <td colspan="12" class="hiddenRow">
+														          <div class="collapse next-table" id="tr-2-2">
+														            <table class="table table-nested">
+														            	<thead>
+																	      <tr>
+																	        <th></th>
+																	        <th>333Category</th>
+																	        <th>Commission</th>
+																	      </tr>
+																	    </thead>
+														              <tbody>
+														                <tr role="button" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="">
+														                	<td>+</td>
+														                  	<td class="col-xs-4 col-sm-2">333</td>
+														                  	<td>2.65</td>
+														                </tr>
+														              </tbody>
+														            </table>
+														          </div>
+														        </td>
+														      </tr><!--third level table -->
+
+											              </tbody>
+											            </table>
+											          </div>
+											        </td>
+											      </tr><!--2nd level table -->
+											      
+								              </tbody>
+								            </table>
+								          </div>
+								        </td>
+								      </tr>
+								      
+								    </tbody>
+								  </table>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="Delivery" role="tabpanel" aria-labelledby="Delivery-tab">
+							<table class="delivery-table">
+								<th>type</th>
+								<th>Avaliable</th>
+								<tbody>
+									<tr>
+										<td>Economy</td>
+										<td><i class="fa fa-times" aria-hidden="true"></i></td>
+									</tr>
+									<tr>
+										<td>Standard</td>
+										<td><i class="fa fa-times" aria-hidden="true"></i></td>
+									</tr>
+									<tr>
+										<td>Express</td>
+										<td><i class="fa fa-times" aria-hidden="true"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade" id="Shipping" role="tabpanel" aria-labelledby="Shipping-tab">
+							<div class="table-holder">
+								<table class="shipping-table">
+									<th>Warehouse ID</th>
+									<th>Shipping Provider</th>
+									<th>Package Profile</th>
+									<th>Type</th>
+									<th>Drop-Off Point Locator</th>
+									<tbody>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>	
+						</div>
+						<div class="tab-pane fade" id="Invoice" role="tabpanel" aria-labelledby="Invoice-tab">
+							<div class="invoice-holder">
+								<label>Generation Type</label>
+								<select>
+									<option>Provide Number Manually</option>
+									<option>Use Autoincrement Number</option>
+									<option>Use Order Number</option>
+								</select>
+							</div>
+							<div class="btn-holder">
+								<button>save</button>
+							</div>
+						</div>
+					</div>
+			  		</div>
+			  	</div>
+			  </div>
+			  
+			  <div class="suppotr_center">
+			  	<span>Need some assistance? Visit our <a href="#">Support Center</a> or contact your <a href="#">Customer Success</a> Manager.</span>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://unpkg.com/shubox@0.4.4/dist/shubox.umd.js"></script>
+    <script src="https://codepen.io/nerdpruitt/pen/oYPMJM"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+	<script>
+		function readURL(input) {
+		  if (input.files && input.files[0]) {
+
+		    var reader = new FileReader();
+
+		    reader.onload = function(e) {
+		      $('.image-upload-wrap').hide();
+
+		      $('.file-upload-image').attr('src', e.target.result);
+		      $('.file-upload-content').show();
+
+		      $('.image-title').html(input.files[0].name);
+		    };
+
+		    reader.readAsDataURL(input.files[0]);
+
+		  } else {
+		    removeUpload();
+		  }
+		}
+
+		function removeUpload() {
+		  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+		  $('.file-upload-content').hide();
+		  $('.image-upload-wrap').show();
+		}
+		$('.image-upload-wrap').bind('dragover', function () {
+		        $('.image-upload-wrap').addClass('image-dropping');
+		    });
+		    $('.image-upload-wrap').bind('dragleave', function () {
+		        $('.image-upload-wrap').removeClass('image-dropping');
+		});
+
+	</script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor1' );
+      CKEDITOR.add            
+   </script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor2' );
+      CKEDITOR.add            
+   </script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor3' );
+      CKEDITOR.add            
+   </script>
+   <script>
+   	$().ready(function(){
+	  $('.slick-carousel').slick({
+	    arrows: true,
+	    rows: 2,
+	    slidesPerRow: 3,
+	    centerPadding: "0px",
+	    dots: false,
+	   // autoplay:true,
+	    slidesToShow: 3,
+        speed: 300,
+        slidesToScroll: 1,
+        infinite: true,
+	    touchThreshold: 500,
+	    infinite: false
+	  });
+	});
+				// $().ready(function(){
+				//   $('.slick-carousel').slick({
+		  //           dots: false,
+		  //           infinite: true,
+		  //           speed: 300,
+		  //           slidesToShow: 4,
+		  //           slidesToScroll: 4,
+		  //           responsive: [{
+		  //               breakpoint: 1200,
+		  //               settings: {
+		  //                   slidesToShow: 4,
+		  //                   slidesToScroll: 4,
+		  //                   infinite: true,
+		  //                   dots: true
+		  //               }
+		  //           }, {
+		  //               breakpoint: 992,
+		  //               settings: {
+		  //                   slidesToShow: 3,
+		  //                   slidesToScroll: 3
+		  //               }
+		  //           }, {
+		  //               breakpoint: 768,
+		  //               settings: {
+		  //                   slidesToShow: 3,
+		  //                   slidesToScroll: 3
+		  //               }
+		  //           }, {
+		  //               breakpoint: 480,
+		  //               settings: {
+		  //                   slidesToShow: 2,
+		  //                   slidesToScroll: 2
+		  //               }
+		  //           }]
+		  //       });
+		  //   }
+   </script>
+   <script>
+   	$("ul.nav-tabs a").click(function (e) {
+	  e.preventDefault();  
+	    $(this).tab('show');
+	});
+   </script>
+        <script>
+  $(function() {
+  $('#datetimepicker1').datetimepicker({
+    language: 'pt-BR'
+  });
+});
+</script>
+<script>
+     function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<script>
+	// Use an adjacent `previewsContainer` to
+// display the photo thumbnails, their upload
+// progress, and success or failure state
+
+uploader = new Shubox("#shubox--upload-target", {
+  key: "7e1e4069",
+  transformName: 'multi-upload',
+  previewsContainer: '#shubox--upload-preview',
+  addedfile: function(){ console.log('added') },
+  success: function(){ console.log('file uploaded') },
+  queuecomplete: function(){ console.log('done') },
+  s3Key: "multis/{{filename}}",
+  transformCallbacks: {
+    ".webp": function(shuboxFile) {
+      console.log(shuboxFile.transforms[".webp"].s3url);
+    },
+    "200x200#": function(shuboxFile) {
+      console.log(shuboxFile.transforms["200x200#"].s3url);
+    },
+    "400x400": function(shuboxFile) {
+      console.log(shuboxFile.transforms["400x400"].s3url);
+    },
+    "800x800": function(shuboxFile) {
+      console.log(shuboxFile.transforms["800x800"].s3url);
+    }
+  }
+})
+</script>
+<script>
+		var bindDateRangeValidation = function (f, s, e) {
+    if(!(f instanceof jQuery)){
+			console.log("Not passing a jQuery object");
+    }
+  
+    var jqForm = f,
+        startDateId = s,
+        endDateId = e;
+  
+    var checkDateRange = function (startDate, endDate) {
+        var isValid = (startDate != "" && endDate != "") ? startDate <= endDate : true;
+        return isValid;
+    }
+
+    var bindValidator = function () {
+        var bstpValidate = jqForm.data('bootstrapValidator');
+        var validateFields = {
+            startDate: {
+                validators: {
+                    notEmpty: { message: 'This field is required.' },
+                    callback: {
+                        message: 'Start Date must less than or equal to End Date.',
+                        callback: function (startDate, validator, $field) {
+                            return checkDateRange(startDate, $('#' + endDateId).val())
+                        }
+                    }
+                }
+            },
+            endDate: {
+                validators: {
+                    notEmpty: { message: 'This field is required.' },
+                    callback: {
+                        message: 'End Date must greater than or equal to Start Date.',
+                        callback: function (endDate, validator, $field) {
+                            return checkDateRange($('#' + startDateId).val(), endDate);
+                        }
+                    }
+                }
+            },
+          	customize: {
+                validators: {
+                    customize: { message: 'customize.' }
+                }
+            }
+        }
+        if (!bstpValidate) {
+            jqForm.bootstrapValidator({
+                excluded: [':disabled'], 
+            })
+        }
+      
+        jqForm.bootstrapValidator('addField', startDateId, validateFields.startDate);
+        jqForm.bootstrapValidator('addField', endDateId, validateFields.endDate);
+      
+    };
+
+    var hookValidatorEvt = function () {
+        var dateBlur = function (e, bundleDateId, action) {
+            jqForm.bootstrapValidator('revalidateField', e.target.id);
+        }
+
+        $('#' + startDateId).on("dp.change dp.update blur", function (e) {
+            $('#' + endDateId).data("DateTimePicker").setMinDate(e.date);
+            dateBlur(e, endDateId);
+        });
+
+        $('#' + endDateId).on("dp.change dp.update blur", function (e) {
+            $('#' + startDateId).data("DateTimePicker").setMaxDate(e.date);
+            dateBlur(e, startDateId);
+        });
+    }
+
+    bindValidator();
+    hookValidatorEvt();
+};
+
+
+$(function () {
+    var sd = new Date(), ed = new Date();
+  
+    $('#startDate').datetimepicker({ 
+      pickTime: false, 
+      format: "YYYY/MM/DD", 
+      defaultDate: sd, 
+      maxDate: ed 
+    });
+  
+    $('#endDate').datetimepicker({ 
+      pickTime: false, 
+      format: "YYYY/MM/DD", 
+      defaultDate: ed, 
+      minDate: sd 
+    });
+
+    //passing 1.jquery form object, 2.start date dom Id, 3.end date dom Id
+    bindDateRangeValidation($("#form"), 'startDate', 'endDate');
+});
+</script>
+<script>
+	$(document).ready(function(){
+   $("#fromDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+       var minDate = new Date(selected.date.valueOf());
+       $('#toDate').datepicker('setStartDate', minDate);
+   });
+
+   $("#toDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+           var minDate = new Date(selected.date.valueOf());
+           $('#fromDate').datepicker('setEndDate', minDate);
+   });
+});
+</script>
+
+</html> 

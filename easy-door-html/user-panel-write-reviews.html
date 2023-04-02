@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shoping</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div id="wrapper">
+		<div class="top-header">
+			<div class="container">
+				<div class="email">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<a href="mailto:customer@easydoor.com">customer@easydoor.com</a>
+				</div>
+				<div class="right-panel">
+					<ul>
+						<li>
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<a href="#">my Account</a>
+						</li>
+						<li>
+							<i class="fa fa-heart" aria-hidden="true"></i>
+							<a href="#">my wishlist</a>
+						</li>
+						<li>
+							<i class="fa fa-lock" aria-hidden="true"></i>
+							<a href="#">login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<header id="header">
+			<div class="container">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.png" alt="image">
+					</a>
+				</div>
+				<div class="search-holder">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<input type="search" name="search" placeholder="search Product">
+					<button type="submit">search</button>
+				</div>
+				<div class="cart-holder">
+					<a href="#" class="google">
+						<img src="images/bg-google.png" alt="image">
+					</a>
+					<a class="cart">
+						<img src="images/bg-cart.png" alt="image">
+						<span class="counter">0</span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="dashbord-content" id="user-panel">
+			<div class="container">
+				<div class="left-bar">
+					<div class="user-box">
+						<img src="images/img135.png" alt="image">
+						<div class="user-text">
+							<span>Hello,</span>
+							<strong>Faizan Saqib</strong>
+						</div>
+					</div>
+					<div id="accordion1" class="myaccordion">
+					  <div class="card">
+					    <div class="card-header" id="headingOne">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					        	<img src="images/img149.png" class="img-1"> 
+					        	Manage My Account
+					        </button>
+					      </h2>
+					    </div>
+					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+					    	<div class="card-body">
+					        <ul class="nav nav-tabs" id="myTab" role="tablist">
+					        	
+					        	<li class="nav-item">
+									<a class="nav-link" href="#">My Profile</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Address Book</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">My Payment Options</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Vouchers</a>
+								</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingTwo">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					        		<img src="images/img150.png">
+					          	My Orders
+					        </button>
+					      </h2>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+					      <div class="card-body">
+					        <ul class="nav nav-tabs" id="myTab" role="tablist">
+					        	<li class="nav-item">
+									<a class="nav-link" href="#">My Orders</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">My Returns</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">My Cancellation</a>
+								</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingThree">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link show active" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+					        	<img src="images/img151.png" alt="image">
+					          	My Reviews
+					        </button>
+					      </h2>
+					    </div>
+					    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion1">
+					      <div class="card-body">
+					        <ul class="nav nav-tabs" id="myTab" role="tablist">
+					          <li class="nav-item">
+									<a class="nav-link" href="#">My Reviews</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link show active" href="#">Write Review</a>
+								</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingThree1">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+					        	<img src="images/img152.png" alt="image">
+					          	My Wishlist
+					        </button>
+					      </h2>
+					    </div>
+					    <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1" data-parent="#accordion1">
+					      <div class="card-body">
+					        <ul class="nav nav-tabs" id="myTab" role="tablist">
+					        	<li class="nav-item">
+									<a class="nav-link" href="#">My Wishlist</a>
+								</li>
+								
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingThree11">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree11" aria-expanded="false" aria-controls="collapseThree11">
+					        	<img src="images/img153.png" alt="image">
+					          	Sell on Easy Door
+					        </button>
+					      </h2>
+					    </div>
+					    
+					  </div>
+					</div>
+				</div>
+				<div class="tab-content" id="myTabContent">
+				 	<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					  	<div class="user-panel-holder">
+					  		<h1>Write Review</h1>
+					  		<div class="profile_holder">
+					  			<div class="payment-holder">
+					  				<div class="review-holder">
+					  					<div class="column">
+					  						<div class="r-1">
+					  							<div class="img-holder">
+					  								<img src="images/img23.jpg" alt="image">
+					  							</div>
+					  							<div class="r-text">
+					  								<span class="purchase">Purchase on 11 Nov 202</span>
+					  								<strong>Kids Toys pack Kids Toys pack  Kids Toys pack </strong>
+					  								<em>Multi Toys pack Multi Toys pack</em>
+					  							</div>
+					  						</div>
+					  						<div class="r-2">
+					  							<div class="review-box">
+													<div class="rating-holder">
+														<fieldset class="rating">
+														    <input type="radio" id="star51" name="rating1" value="5" /><label class = "full" for="star51" title="Awesome - 5 stars"></label>
+														    <input type="radio" id="star41half" name="rating1" value="4 and a half" /><label class="half" for="star41half" title="Pretty good - 4.5 stars"></label>
+														    <input type="radio" id="star41" name="rating1" value="4" /><label class = "full" for="star41" title="Pretty good - 4 stars"></label>
+														    <input type="radio" id="star31half" name="rating1" value="3 and a half" /><label class="half" for="star31half" title="Meh - 3.5 stars"></label>
+														    <input type="radio" id="star31" name="rating1" value="3" /><label class = "full" for="star31" title="Meh - 3 stars"></label>
+														    <input type="radio" id="star21half" name="rating1" value="2 and a half" /><label class="half" for="star21half" title="Kinda bad - 2.5 stars"></label>
+														    <input type="radio" id="star21" name="rating1" value="2" /><label class = "full" for="star21" title="Kinda bad - 2 stars"></label>
+														    <input type="radio" id="star11half" name="rating1" value="1 and a half" /><label class="half" for="star11half" title="Meh - 1.5 stars"></label>
+														    <input type="radio" id="star11" name="rating1" value="1" /><label class = "full" for="star11" title="Sucks big time - 1 star"></label>
+														    <input type="radio" id="starhalf1" name="rating1" value="half" /><label class="half" for="starhalf1" title="Sucks big time - 0.5 stars"></label>
+														</fieldset>
+													</div>
+												</div>
+					  						</div>
+					  						<div class="r-3">
+					  							<p>
+					  								Please share your product experience Was the product as description? What is the quality like? What did you like or details about the product?
+					  							</p>
+					  							<textarea placeholder="Write Your Review"></textarea>
+					  							
+
+
+					  							<div class="image-upload-container">
+												      <div class="image-upload-one">
+												        <div class="center">
+												          <div class="form-input">
+												            <label for="file-ip-1">
+												              <img id="file-ip-1-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+												              <button type="button" class="imgRemove" onclick="myImgRemove(1)"></button>
+												            </label>
+												            <input type="file"  name="img_one" id="file-ip-1" accept="image/*" onchange="showPreview(event, 1);">
+												          </div>
+												          <small class="small">Use the &#8634; icon to reset the image</small>
+												        </div>
+												      </div>
+												      <!-- ************************************************************************************************************ -->
+												      <div class="image-upload-two">
+												        <div class="center">
+												          <div class="form-input">
+												            <label for="file-ip-2">
+												              <img id="file-ip-2-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+												              <button type="button" class="imgRemove" onclick="myImgRemove(2)"></button>
+												            </label>
+												            <input type="file" name="img_two" id="file-ip-2" accept="image/*" onchange="showPreview(event, 2);">
+												          </div>
+												          <small class="small">Use the &#8634; icon to reset the image</small>
+												        </div>
+												      </div>
+
+												      <!-- ************************************************************************************************************ -->
+												      <div class="image-upload-three">
+												        <div class="center">
+												          <div class="form-input">
+												            <label for="file-ip-3">
+												              <img id="file-ip-3-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+												              <button type="button" class="imgRemove" onclick="myImgRemove(3)"></button>
+												            </label>
+												            <input type="file" name="img_three" id="file-ip-3" accept="image/*" onchange="showPreview(event, 3);">
+												          </div>
+												          <small class="small">Use the &#8634; icon to reset the image</small>
+												        </div>
+												      </div>
+												      <!-- *********************************************************************************************************** -->
+												        <div class="image-upload-four">
+												          <div class="center">
+												            <div class="form-input">
+												              <label for="file-ip-4">
+												                <img id="file-ip-4-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+												                <button type="button" class="imgRemove" onclick="myImgRemove(4)"></button>
+												              </label>
+												              <input type="file" name="img_four" id="file-ip-4" accept="image/*" onchange="showPreview(event, 4);">
+												            </div>
+												            <small class="small">Use the &#8634; icon to reset the image</small>
+												          </div>
+												        </div>
+												        <!-- ************************************************************************************************************ -->
+												        <div class="image-upload-five">
+												          <div class="center">
+												            <div class="form-input">
+												              <label for="file-ip-5">
+												                <img id="file-ip-5-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+												                <button type="button" class="imgRemove" onclick="myImgRemove(5)"></button>
+												              </label>
+												              <input type="file" name="img_five" id="file-ip-5" accept="image/*" onchange="showPreview(event, 5);">
+												            </div>
+												            <small class="small">Use the &#8634; icon to reset the image</small>
+												          </div>
+												        </div>
+												  
+												        <!-- ************************************************************************************************************ -->
+												        <div class="image-upload-six">
+												          <div class="center">
+												            <div class="form-input">
+												              <label for="file-ip-6">
+												                <img id="file-ip-6-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+												                <button type="button" class="imgRemove" onclick="myImgRemove(6)"></button>
+												              </label>
+												              <input type="file" name="img_six" id="file-ip-6" accept="image/*" onchange="showPreview(event, 6);">
+												            </div>
+												            <small class="small">Use the &#8634; icon to reset the image</small>
+												          </div>
+												        </div>
+
+												      <!-- ************************************************************************************************************** -->
+
+    											</div>
+    
+    											<div class="upload-frame">
+											      	<span>Upload</span>
+											      	<p>Upto 6 images</p>
+											      	<p>Maximum 5 MB</p>
+											      	<p>Relevant Images which meet Community Guidelines Happy Reviewing!</p>
+											    </div>
+					  						</div>
+
+					  						
+					  					</div>
+					  					<div class="column">
+					  						<div class="r-3">
+					  							<div class="rate-box">
+					  								<img src="images/emoji-1.png" alt="image" class="left">
+					  								<div class="radi-box">
+					  									<input type="radio" id="Excellent" name="animal" value="" />
+														<label for="Excellent">Excellent</label>
+					  								</div>
+					  								<img src="images/emoji-4.png" alt="image" class="right">
+					  							</div>
+					  							<div class="rate-box">
+					  								<img src="images/emoji-2.png" alt="image" class="left">
+					  								<div class="radi-box">
+					  									<input type="radio" id="Good" name="animal" value="" />
+														<label for="Good">Good</label>
+					  								</div>
+					  								<img src="images/emoji-4.png" alt="image" class="right">
+					  							</div>
+					  							<div class="rate-box">
+					  								<img src="images/emoji-3.png" alt="image" class="left">
+					  								<div class="radi-box">
+					  									<input type="radio" id="Bad" name="animal" value="" />
+														<label for="Bad">Bad</label>
+					  								</div>
+					  								<img src="images/emoji-4.png" alt="image" class="right">
+					  							</div>
+					  						</div>
+					  						<textarea placeholder="How was your experience with the seller? Was the seller helpful or not? How satisfied were you with the product's packaging?" style="font-size: 12px; padding: 10px;"></textarea>
+					  						<div class="r-2">
+					  							<span>Rate Your Rider</span>
+					  							<div class="review-box">
+													<div class="rating-holder">
+														<fieldset class="rating">
+														    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+														    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+														    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+														    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+														    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+														    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+														    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+														    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+														    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+														    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+														</fieldset>
+													</div>
+												</div>
+					  						</div>
+					  						<textarea placeholder="How was your overall experience with our rider?"></textarea>
+					  						<div class="switch-slider">
+					  							<em>Review as Faizan S.</em>
+						  						<label class="switch">
+													<input type="checkbox">
+													<span class="slider round"></span>
+												</label>
+												<em>Anonymous</em>
+											</div>
+					  					</div>
+					  				<button>Submit Review</button>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div><!-- write review -->
+				</div>
+			</div>
+		</div>
+
+		<section class="info-section">
+			<div class="container">
+				<div class="info-columns">
+					<div class="column">
+						<div class="img">
+							<img src="images/img32.jpg" alt="image">
+						</div>
+						<div class="text-holder">
+							<strong>Free Shiping</strong>
+							<p>Free shiping on all uk orders</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="img">
+							<img src="images/img33.jpg" alt="image">
+						</div>
+						<div class="text-holder">
+							<strong>Money Guarantee</strong>
+							<p>30 days money back guarantee</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="img">
+							<img src="images/img34.jpg" alt="image">
+						</div>
+						<div class="text-holder">
+							<strong>Online Support</strong>
+							<p>We support online 24 hours a day</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="footer-column">
+					<div class="column">
+						<a class="logo">
+							<img src="images/logo.png" alt="image">
+						</a>
+						<div class="address-box">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>615 Garden Heights New Garden Lahore Lahre.</span>
+						</div>
+						<div class="address-box">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<a href="tel:03327147122">0332 7147122</a>
+						</div>
+						<div class="address-box">
+							<i class="fa fa-mobile" aria-hidden="true"></i>
+							<a href="mailto:customer@easydoor.com">customer@easydoor.com</a>
+						</div>
+					</div>
+					<div class="column">
+						<strong>my account</strong>
+						<ul>
+							<li>
+								<a href="#">about us</a>
+							</li>
+							<li>
+								<a href="#">order history</a>
+							</li>
+							<li>
+								<a href="#">information</a>
+							</li>
+							<li>
+								<a href="#">privacy policy</a>
+							</li>
+							<li>
+								<a href="#">site map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="column">
+						<strong>Information</strong>
+						<ul>
+							<li>
+								<a href="#">about us</a>
+							</li>
+							<li>
+								<a href="#">order history</a>
+							</li>
+							<li>
+								<a href="#">information</a>
+							</li>
+							<li>
+								<a href="#">privacy policy</a>
+							</li>
+							<li>
+								<a href="#">site map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="column">
+						<strong>Our Services</strong>
+						<ul>
+							<li>
+								<a href="#">about us</a>
+							</li>
+							<li>
+								<a href="#">order history</a>
+							</li>
+							<li>
+								<a href="#">information</a>
+							</li>
+							<li>
+								<a href="#">privacy policy</a>
+							</li>
+							<li>
+								<a href="#">site map</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom-holder">
+					<div class="bottom-column">
+						<span class="heading">Payment Methods</span>
+						<ul class="pay-list">
+							<li>
+								<a href="#">
+									<img src="images/img37.png" alt="image">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img38.png" alt="image">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img39.png" alt="image">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img40.png" alt="image">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom-column">
+						<span class="heading">Follow us</span>
+						<ul class="follow-list">
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom-column">
+						<span class="heading">Download App</span>
+						<ul class="download-list">
+							<li>
+								<a href="#">
+									<img src="images/img41.png" alt="image">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img42.png" alt="image">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="bottom-footer">
+			<div class="container">
+				<span class="copyright">Copyright 2020 easydoor.com Designed By:<a href="#"> Magic Mayo</a></span>
+				<ul class="footer-nav">
+					<li>
+						<a href="#">About Us </a>
+					</li>
+					<li>
+						<a href="#">Our Blog </a>
+					</li>
+					<li>
+						<a href="#">Sitemap</a>
+					</li>
+					<li>
+						<a href="#">Terms & Conditions </a>
+					</li>
+					<li>
+						<a href="#">Privacy Policy</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="edit-profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	        	<div class="row-form">
+	        		<label>Name</label>
+	        		<input type="text">
+	        	</div>
+	        	<div class="row-form">
+	        		<label>Name</label>
+	        		<input type="text">
+	        	</div>
+	        	<div class="row-form">
+	        		<label>Name</label>
+	        		<input type="text">
+	        	</div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="edit-address" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edit address</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	        	<div class="row-form">
+	        		<label>Name</label>
+	        		<input type="text">
+	        	</div>
+	        	<div class="row-form">
+	        		<label>Name</label>
+	        		<input type="text">
+	        	</div>
+	        	<div class="row-form">
+	        		<label>Name</label>
+	        		<input type="text">
+	        	</div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>	
+	<script>
+		$(document).ready(function(){
+		  $(".menu").click(function(){
+		    $("body").toggleClass("open-nav");
+		  });
+		});
+	</script>
+	<script>
+		$(function () {
+        $("#switch-id").change(function () {
+            if ($(this).is(":checked")) {
+                $(".contentB").show();
+                $(".contentA").hide();
+            } else {
+                $(".contentB").hide();
+                $(".contentA").show();
+            }
+        });
+    });
+	</script>
+	<script>
+		var number = 1;
+do {
+  function showPreview(event, number){
+    if(event.target.files.length > 0){
+      let src = URL.createObjectURL(event.target.files[0]);
+      let preview = document.getElementById("file-ip-"+number+"-preview");
+      preview.src = src;
+      preview.style.display = "block";
+    } 
+  }
+  function myImgRemove(number) {
+      document.getElementById("file-ip-"+number+"-preview").src = "https://i.ibb.co/ZVFsg37/default.png";
+      document.getElementById("file-ip-"+number).value = null;
+    }
+  number++;
+}
+while (number < 5);
+	</script>
+	<script>
+		$('body').append('<div style="" id="loading"><img id="loading-image" src="images/Easy-Door-gifmaker.gif" alt="Loading..." /></div>');
+			$(window).on('load', function(){
+			  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+			});
+			function removeLoader(){
+			    $( "#loading" ).fadeOut(500, function() {
+			      // fadeOut complete. Remove the loading div
+			      $( "#loading-image" ).remove(); //makes page more lightweight 
+			  });  
+			}
+	</script>
+</html> 

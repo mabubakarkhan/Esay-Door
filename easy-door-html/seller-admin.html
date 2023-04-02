@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seller Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div class="seller-header">
+			<div class="fluid-container">
+				<a class="seller-logo">
+					<img src="images/logo.png" alt="logo">
+				</a>
+				<div class="right-panel">
+					<a class="email" href="mailto:info@easydoor.com">info@easydoor.com</a>
+					<a class="access" href="#">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+						Easy Access
+						<i class="fa fa-sort-desc" aria-hidden="true"></i>
+					</a>
+				</div> 
+			</div>    
+		</div>
+		<div class="dashbord-content">
+			<div class="left-bar">
+				<div id="accordion" class="myaccordion">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				        	<img src="images/bg-dashboard.png">
+				        	Dashboard
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				    	<div class="card-body">
+				        <ul class="nav nav-tab" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" id="dashboard" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard-tab" aria-selected="true">Dashboard</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        	<img src="images/bg-product.png" alt="image">
+				          	Products
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tab" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" id="home1-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true">Manage Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="Products-tab" data-toggle="tab" href="#Products" role="tab" aria-controls="Products" aria-selected="false">Add Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="false">Media Center</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="media-tab-1" data-toggle="tab" href="#media1" role="tab" aria-controls="media1" aria-selected="false">Manage image</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				        	<img src="images/bg-promotions.png" alt="image">
+				          	Promotions
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tab" id="myTab" role="tablist">
+				          <li class="nav-item">
+								<a class="nav-link" id="campaign-tab" data-toggle="tab" href="#campaign" role="tab" aria-controls="campaign" aria-selected="true">Plateform campaign</a>
+							</li>
+				          <li class="nav-item">
+								<a class="nav-link" id="voucher-campaign-tab" data-toggle="tab" href="#voucher-campaign" role="tab" aria-controls="voucher-campaign" aria-selected="true">Voucher campaign</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree1">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+				        	<img src="images/bg-finance.png" alt="image">
+				          	Finance
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tab" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" id="statements-tab" data-toggle="tab" href="#statements" role="tab" aria-controls="statements" aria-selected="true">Account statements</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Order overview</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="transaction-tab" data-toggle="tab" href="#transaction" role="tab" aria-controls="transaction" aria-selected="true">Transaction overview</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree11">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree11" aria-expanded="false" aria-controls="collapseThree11">
+				        	<img src="images/bg-account.png" alt="image">
+				          	Account & Settings
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree11" class="collapse" aria-labelledby="headingThree11" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tab" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="management-tab" data-toggle="tab" href="#management" role="tab" aria-controls="management" aria-selected="true">User Management</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Account settings</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="chat-tab" data-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="true">Chat settings</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="tab-content" id="myTabContent">
+			  <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+			  	<div class="dash-holder">
+			  		<div class="d-top">
+			  			<span class="left">Welcome ! Complete Your to-do List and Earn 1 Free Quota of</span>
+			  			<span class="right">0% completed, keep up the good work!</span>
+			  		</div>
+			  		<div class="d-columns">
+			  			<a href="#" class="column active">
+			  				<span class="icon">
+			  					<i class="fa fa-map-marker" aria-hidden="true"></i>
+			  					<strong>Manage Address Book</strong>
+			  				</span>
+			  				<em>Start to sell</em>
+			  			</a>
+			  			<a href="#" class="column">
+			  				<span class="icon">
+			  					<i class="fa fa-shield" aria-hidden="true"></i>
+			  					<strong>Verify Corporate File</strong>
+			  				</span>
+			  				<em>Safegurad your account</em>
+			  			</a>
+			  			<a href="#" class="column">
+			  				<span class="icon">
+			  					<i class="fa fa-university" aria-hidden="true"></i>
+			  					<strong>Fill in Bank Information</strong>
+			  				</span>
+			  				<em>To receive your money</em>
+			  			</a>
+			  			<a href="#" class="column">
+			  				<span class="icon">
+			  					<i class="fa fa-paperclip" aria-hidden="true"></i>
+			  					<strong>Order Package Info</strong>
+			  				</span>
+			  				<em>Order Package Info Title</em>
+			  			</a>
+			  			<a href="#" class="column">
+			  				<span class="icon">
+			  					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+			  					<strong>Upload Your SKU</strong>
+			  				</span>
+			  				<em>Get your products ready</em>
+			  			</a>
+			  		</div>
+			  		<div class="comp-holder">
+				  		<div class="compaign-event">
+				  			<h1>Campaign event</h1>
+				  			<div class="slick-carousel">
+								<div>
+									<div class="slide-content">
+										<div class="timer">
+											<span>left</span>
+											<ul class="time-list">
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+												<li>90h</li>
+												:
+												<li>05m</li>
+												:
+												<li>54s</li>
+											</ul>
+										</div>
+										<img src="images/img132.jpg" alt="image">
+										<span class="title">11.11 Shake Shake Voucher Compaign</span>
+										<span class="date">Oct 31,2020 - Nov 17, 2020</span>
+										<div class="bottom-box">
+											<div class="left">
+												<em>Seller:502</em>
+												<em>Seller:502</em>
+											</div>
+											<div class="right">
+												<a href="#" data-toggle="modal" data-target="#accountmodal">join</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide-content">
+										<div class="timer">
+											<span>left</span>
+											<ul class="time-list">
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+												<li>90h</li>
+												:
+												<li>05m</li>
+												:
+												<li>54s</li>
+											</ul>
+										</div>
+										<img src="images/img132.jpg" alt="image">
+										<span class="title">11.11 Shake Shake Voucher Compaign</span>
+										<span class="date">Oct 31,2020 - Nov 17, 2020</span>
+										<div class="bottom-box">
+											<div class="left">
+												<em>Seller:502</em>
+												<em>Seller:502</em>
+											</div>
+											<div class="right">
+												<a href="#">join</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide-content">
+										<div class="timer">
+											<span>left</span>
+											<ul class="time-list">
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+												<li>90h</li>
+												:
+												<li>05m</li>
+												:
+												<li>54s</li>
+											</ul>
+										</div>
+										<img src="images/img132.jpg" alt="image">
+										<span class="title">11.11 Shake Shake Voucher Compaign</span>
+										<span class="date">Oct 31,2020 - Nov 17, 2020</span>
+										<div class="bottom-box">
+											<div class="left">
+												<em>Seller:502</em>
+												<em>Seller:502</em>
+											</div>
+											<div class="right">
+												<a href="#">join</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide-content">
+										<div class="timer">
+											<span>left</span>
+											<ul class="time-list">
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+												<li>90h</li>
+												:
+												<li>05m</li>
+												:
+												<li>54s</li>
+											</ul>
+										</div>
+										<img src="images/img132.jpg" alt="image">
+										<span class="title">11.11 Shake Shake Voucher Compaign</span>
+										<span class="date">Oct 31,2020 - Nov 17, 2020</span>
+										<div class="bottom-box">
+											<div class="left">
+												<em>Seller:502</em>
+												<em>Seller:502</em>
+											</div>
+											<div class="right">
+												<a href="#">join</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide-content">
+										<div class="timer">
+											<span>left</span>
+											<ul class="time-list">
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+												<li>90h</li>
+												:
+												<li>05m</li>
+												:
+												<li>54s</li>
+											</ul>
+										</div>
+										<img src="images/img132.jpg" alt="image">
+										<span class="title">11.11 Shake Shake Voucher Compaign</span>
+										<span class="date">Oct 31,2020 - Nov 17, 2020</span>
+										<div class="bottom-box">
+											<div class="left">
+												<em>Seller:502</em>
+												<em>Seller:502</em>
+											</div>
+											<div class="right">
+												<a href="#">join</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide-content">
+										<div class="timer">
+											<span>left</span>
+											<ul class="time-list">
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+												<li>90h</li>
+												:
+												<li>05m</li>
+												:
+												<li>54s</li>
+											</ul>
+										</div>
+										<img src="images/img132.jpg" alt="image">
+										<span class="title">11.11 Shake Shake Voucher Compaign</span>
+										<span class="date">Oct 31,2020 - Nov 17, 2020</span>
+										<div class="bottom-box">
+											<div class="left">
+												<em>Seller:502</em>
+												<em>Seller:502</em>
+											</div>
+											<div class="right">
+												<a href="#">join</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+				  		</div>
+				  	</div>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="home1" role="tabpanel" aria-labelledby="home1-tab">
+			  	<h1>Manage Product</h1>
+			  	<div class="btn-list">
+			  		<button>Add New</button>
+			  		<button>Export</button>
+			  		<button>Import</button>
+			  		<button>View History</button>
+			  		<button>Name</button>
+			  		<button>Seller SKU</button>
+			  		<button>Shop SKU</button>
+			  		<button>Brand Name</button>
+			  		<button class="search">Search</button>
+			  	</div>
+			  	<div class="product_list">
+			  		<ul>
+			  			<li>
+			  				<span>All</span>
+			  				<em>(0)</em>
+			  			</li>
+			  			<li>
+			  				<span>Live</span>
+			  				<em>(0)</em>
+			  			</li>
+			  			<li>
+			  				<span>Poor Quality</span>
+			  				<em>(0)</em>
+			  			</li>
+			  			<li>
+			  				<span>Sold Out</span>
+			  				<em>(0)</em>
+			  			</li>
+			  			<li>
+			  				<span>Inactive</span>
+			  				<em>(0)</em>
+			  			</li>
+			  			<li>
+			  				<span>Policy Voilation</span>
+			  				<em>(0)</em>
+			  			</li>
+			  		</ul>
+			  	</div>
+			  	<div class="table-holder">
+			  		<table class="product-table">
+			  			<thead>
+			  				<th>Name</th>
+			  				<th>SKU</th>
+			  				<th>Creat</th>
+			  				<th>Rejected Reasons</th>
+			  				<th>Quality Control Commet</th>
+			  				<th>Penalty Type</th>
+			  				<th>Action</th>
+			  			</thead>
+			  			<tbody>
+			  				<tr>
+			  					<td>Abc</td>
+			  					<td>Abc</td>
+			  					<td>Abc</td>
+			  					<td>Abc</td>
+			  					<td>Abc</td>
+			  					<td>Abc</td>
+			  					<td>Abc</td>
+			  				</tr>
+			  			</tbody>
+			  		</table>
+			  	</div>
+			  	<div class="pagination product">
+			  		<ul>
+			  			<li>
+			  				<a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i> Previous</a>
+			  			</li>
+			  			<li>
+			  				<a class="active" href="#">1</a>
+			  			</li>
+			  			<li>
+			  				<a href="#">Next <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			  			</li>
+			  		</ul>
+			  		<div class="select_holder">
+			  			<label>Items per page</label>
+			  			<select>
+			  				<option>10</option>
+			  				<option>15</option>
+			  				<option>20</option>
+			  				<option>25</option>
+			  			</select>
+			  		</div>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="Products" role="tabpanel" aria-labelledby="Product-tab">
+			  	<ul class="breadcrumbs">
+			  		<li>
+			  			<a href="#">Home</a>
+			  		</li>
+			  		<li>
+			  			<a href="#">products</a>
+			  		</li>
+			  		<li>Add Product</li>
+			  	</ul>
+			  	<h1>basic information</h1>
+			  	<form class="info-form" action="#">
+			  		<div class="info-row">
+			  			<div class="l-info">
+			  				<label>product name<em>*</em></label>
+			  				<input type="text">
+			  				<a href="#" class="bottom-info">Add Multi-Languages</a>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="l-info">
+			  				<label>category<em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Category</option>
+			  					<option>Category</option>
+			  					<option>Category</option>
+			  				</select>
+			  				<a href="#" class="bottom-info">Recenty Used</a>
+			  			</div>
+			  			<div class="l-info">
+			  				<label>Video URL</label>
+			  				<input type="text">
+			  			</div>
+			  		</div>
+			  	</form>
+			  	<h1 style="margin: 0;">Product Attributes</h1>
+			  	<p style="color: #afafaf; font-size: 13px; margin: 0 0 20px;">
+			  		Boost your item's searchability by filling-up the Key Product Information marked with KEY. <br> The more you fill-up, the easier for buyers to find your product.
+			  	</p>
+			  	<form class="attr-form info-form">
+			  		<div class="info-row">
+			  			<div class="column">
+			  				<label>brand <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+
+			  			<div class="column">
+			  				<label>protection <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  			<div class="column">
+			  				<label>body type <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="column">
+			  				<label>E-Warranty <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+
+			  			<div class="column">
+			  				<label>Model Year <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  			<div class="column">
+			  				<label>Notchted Display <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="column">
+			  				<label>Fast Charging <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+
+			  			<div class="column">
+			  				<label>Headphone Jack <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  			<div class="column">
+			  				<label>Wireless Charging <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="column">
+			  				<label>Number of Cameras <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+
+			  			<div class="column">
+			  				<label>Battery capacity <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  			<div class="column">
+			  				<label>Phone Features <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="column">
+			  				<label>PPI</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+
+			  			<div class="column">
+			  				<label>Screen Size (inches) </label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  			<div class="column">
+			  				<label>sim type</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="column">
+			  				<label>Camera Front (Megapixels</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+
+			  			<div class="column">
+			  				<label>RAM Memory</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  			<div class="column">
+			  				<label>Camera Back (Megapixels)</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="column">
+			  				<label>Number of Cores</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+
+			  			<div class="column">
+			  				<label>Video Resolution</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  			<div class="column">
+			  				<label>Type of Battery</label>
+			  				<select>
+			  					<option></option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  					<option>Brand</option>
+			  				</select>
+			  			</div>
+			  		</div>
+			  		<div class="pass-btn">
+						<button>submit</button>
+					</div>
+					<h1>detailed description</h1>
+					<div class="editor">
+						<div class="cs-holder">
+							<h1>heilights</h1>
+							<div class="right-holder">
+								<div class="btn-holder">
+									<select>
+										<option>Pakistan</option>
+										<option>Pakistan</option>
+										<option>Pakistan</option>
+									</select>
+								</div>
+							</div>
+						</div>
+							<textarea name="editor1" class="ckeditor"></textarea>
+					</div>
+					<div class="editor">
+						<div class="cs-holder">
+							<h1>roduct description</h1>
+							<div class="right-holder">
+								<div class="btn-holder">
+									<select>
+										<option>Normal</option>
+										<option>Pakistan</option>
+										<option>Pakistan</option>
+									</select>
+									<select>
+										<option>Normal</option>
+										<option>Pakistan</option>
+										<option>Pakistan</option>
+									</select>
+								</div>
+							</div>
+						</div>
+							<textarea name="editor2" class="ckeditor"></textarea>
+					</div>
+
+					<div class="editor">
+						<div class="cs-holder">
+							<h1>english description</h1>
+							<div class="right-holder">
+								<div class="btn-holder">
+									<select>
+										<option>Normal</option>
+										<option>Pakistan</option>
+										<option>Pakistan</option>
+									</select>
+									<select>
+										<option>Normal</option>
+										<option>Pakistan</option>
+										<option>Pakistan</option>
+									</select>
+								</div>
+							</div>
+						</div>
+							<textarea name="editor3" class="ckeditor"></textarea>
+					</div>
+					<div class="editor">
+						<div class="cs-holder">
+							<h1>What's in the box</h1>
+							<input type="text" name="">
+						</div>
+					</div>
+			  	</form>
+			  	<h1>Price & Stock</h1>
+			  	<form class="info-form" action="#">
+			  		<div class="info-row">
+			  			<div class="l-info">
+			  				<label>product name<em>*</em></label>
+			  				<input type="text">
+			  				<a href="#" class="bottom-info">Add Multi-Languages</a>
+			  			</div>
+			  		</div>
+			  		<div class="info-row">
+			  			<div class="l-info">
+			  				<label>Storage Capacity <em>*</em></label>
+			  				<select>
+			  					<option></option>
+			  					<option>Category</option>
+			  					<option>Category</option>
+			  					<option>Category</option>
+			  				</select>
+			  				<a href="#" class="bottom-info" style="float: left; margin: 20px 0 0;">+ Add a new SKU</a>
+			  			</div>
+			  			<div class="l-info">
+			  				<label>Color family <em>*</em></label>
+			  				<input type="text">
+			  			</div>
+			  		</div>
+			  		<div class="upload-box">
+			  			<div class="upload-column">
+			  				<input type="file" id="upload" hidden/>
+							<label for="upload"><i class="fa fa-paperclip" aria-hidden="true"></i> Copy the first to the rest</label>
+			  			</div>
+			  			<div class="upload-column">
+			  				<input type="file" id="upload" hidden/>
+							<label for="upload"><i class="fa fa-paperclip" aria-hidden="true"></i>Copy the first stock to the rest only</label>
+			  			</div>
+			  			<div class="upload-column">
+			  				<input type="file" id="upload" hidden/>
+							<label for="upload"><i class="fa fa-paperclip" aria-hidden="true"></i>Copy the first price to the rest only</label>
+			  			</div>
+			  		</div>
+			  			<ul class="stock-list">
+			  				<li>
+			  					<span class="top">Availability</span>
+			  					<span class="bottom">
+			  						<div>
+									  <label class="switch-primary">
+									    <input type="checkbox" class="switch switch-bootstrap status" name="status" id="" value="1">
+									    <span class="switch-body"></span>
+									  </label>
+									</div>
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">Storage Capacity</span>
+			  					<span class="bottom">
+			  						<select>
+			  							<option>Please Select</option>
+			  							<option>Please Select</option>
+			  							<option>Please Select</option>
+			  						</select>
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">Color Family</span>
+			  					<span class="bottom">
+			  						<select>
+			  							<option>Please Select</option>
+			  							<option>Please Select</option>
+			  							<option>Please Select</option>
+			  						</select>
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">price</span>
+			  					<span class="bottom">
+			  						<input type="text">
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">Special Price</span>
+			  					<span class="bottom">
+			  						<a href="#" class="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">quantity</span>
+			  					<span class="bottom">
+			  						<input type="text">
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">seller SKU</span>
+			  					<span class="bottom">
+			  						<input type="text" placeholder="Optional">
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">shop SKU</span>
+			  					<span class="bottom"></span>
+			  				</li>
+			  				<li>
+			  					<span class="top">Free items</span>
+			  					<span class="bottom">
+			  						<input type="text">
+			  					</span>
+			  				</li>
+			  				<li>
+			  					<span class="top">action</span>
+			  					<span class="bottom"><i class="fa fa-trash" aria-hidden="true"></i></span>
+			  				</li>
+			  			</ul>
+			  			<div class="service-box">
+				  			<h1>Service &amp; delivery</h1>
+				  			<h2>service</h2>
+				  			<div class="info-row">
+				  				<div class="l-info">
+				  					<label>warrenty type <em>*</em></label>
+				  					<select>
+				  						<option>Select</option>
+				  						<option>Select</option>
+				  						<option>Select</option>
+				  					</select>
+				  				</div>
+				  				<div class="l-info">
+				  					<label>warrenty periode <em>*</em></label>
+				  					<input type="text">
+				  				</div>
+				  			</div>
+				  			<h2>delivery</h2>
+				  			<div class="delivery-row">
+			  					<label>Package Weight (kg)</label>
+			  					<input type="text" name="">
+				  			</div>
+				  			<div class="delivery-row">
+			  					<label>Package Dimensions (cm)</label>
+			  					<input type="text" name="">
+			  					<input type="text" name="">
+			  					<input type="text" name="">
+				  			</div>
+				  			<div class="delivery-row">
+				  				<label>Dangerous Goods</label>
+				  				<ul class="unstyled centered">
+								<li>
+									<input class="styled-checkbox" id="styled-checkbox-01" type="checkbox" value="value1">
+									<label for="styled-checkbox-01">Battery</label>
+								</li>
+								<li>
+									<input class="styled-checkbox" id="styled-checkbox-02" type="checkbox" value="value2">
+									<label for="styled-checkbox-02">Flameable</label>
+								</li>
+								<li>
+									<input class="styled-checkbox" id="styled-checkbox-03" type="checkbox" value="value3">
+									<label for="styled-checkbox-03">Liquide</label>
+								</li>
+								<li>
+									<input class="styled-checkbox" id="styled-checkbox-04" type="checkbox" value="value4">
+									<label for="styled-checkbox-04">None</label>
+								</li>
+							</ul>
+			  			</div>
+			  		</div>
+			  	</form>
+			  	<div class="product-btn">
+			  		<a href="#" class="submit">Submit</a>
+			  		<a href="#" class="save">Save as draft</a>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+			  	<div class="p-holder">
+			  		<h1>Profile</h1>
+			  		<div class="p-tabs">
+			  			<ul class="nav nav-tab" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="General-tab" data-toggle="tab" href="#General" role="tab" aria-controls="General" aria-selected="true">General</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Logo-tab" data-toggle="tab" href="#Logo" role="tab" aria-controls="Logo" aria-selected="false">Logo</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Commissions-tab" data-toggle="tab" href="#Commissions" role="tab" aria-controls="Commissions" aria-selected="false">Commissions</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Delivery-tab" data-toggle="tab" href="#Delivery" role="tab" aria-controls="Delivery" aria-selected="false">Delivery Options</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Shipping-tab" data-toggle="tab" href="#Shipping" role="tab" aria-controls="Shipping" aria-selected="false">Shipping Provider</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Invoice-tab" data-toggle="tab" href="#Invoice" role="tab" aria-controls="Invoice" aria-selected="false">Invoice Number</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContentt">
+						<div class="tab-pane fade show active" id="General" role="tabpanel" aria-labelledby="General-tab">
+							<div class="inner-tabs">
+								<ul class="nav nav-tab" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="nested-home-tab" data-toggle="tab" href="#nestedHome" role="tab" aria-controls="home" aria-selected="true">Seller Account</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-profile-tab" data-toggle="tab" href="#nestedProfile" role="tab" aria-controls="profile" aria-selected="false">  Business Information</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-contact-tab" data-toggle="tab" href="#nestedContact" role="tab" aria-controls="contact" aria-selected="false">Bank Account</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Address-tab" data-toggle="tab" href="#nestedAddress" role="tab" aria-controls="Address" aria-selected="false">Warehouse Address</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Return-tab" data-toggle="tab" href="#nestedReturn" role="tab" aria-controls="contact" aria-selected="false">Return Address</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="nestedHome" role="tabpanel" aria-labelledby="home-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>ID Seller <em>*</em></label>
+												<input type="text" disabled="disabled" placeholder="PK2BNUJYD1">
+											</div>
+											<div class="seller-row">
+												<label>First and Last Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Email <em>*</em></label>
+												<input type="email">
+											</div>
+											<div class="seller-row">
+												<label>Mobile Number <em>*</em></label>
+												<input type="tel">
+											</div>
+											<div class="seller-row">
+												<label>Display Name / Shop Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Holiday Mode <em>*</em></label>
+												<div class="radio-box">
+													<input type="radio" id="yes" name="radio-group">
+					    							<label for="yes">Yes</label>
+					    						</div>
+												<div class="radio-box">
+													<input type="radio" id="no" name="radio-group">
+					    							<label for="no">No</label>
+					    						</div>
+											</div>
+											<div class="seller-row">
+												<label>Holiday Mode Period <em>*</em></label>
+												<div id="datetimepicker1" class="input-append date">
+											      <input class="calander" data-format="dd/MM/yyyy hh:mm:ss" type="text" placeholder="Select Date Time">
+											      <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+											    </div>      
+											</div>
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedProfile" role="tabpanel" aria-labelledby="profile-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>Legal Name / Business Owner <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Address <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Country / Region <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Person in Charge</label>
+												<input type="tel">
+											</div>
+											<div class="seller-row">
+												<label>Business Registration Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Upload Business Document</label>
+												<input type="file" name="">
+											</div>
+											<div class="seller-row">
+												<label>State <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Area <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Location <em>*</em></label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Person in Charge Mobile Number</label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Person in Charge Email</label>
+												<input type="text">
+											</div>
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedContact" role="tabpanel" aria-labelledby="contact-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>Account Title <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Account Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Bank Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Branch Code <em>*</em></label>
+												<input type="tel">
+											</div>
+											<div class="seller-row">
+												<label>IBAN</label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Upload Cheque Copy <em>*</em></label>
+												<input type="file">
+											</div>
+											<div class="seller-row">
+												<label>Tax Category</label>
+												<input type="text">
+											</div>
+											
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedAddress" role="tabpanel" aria-labelledby="Address-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>First and Last Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Address <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Mobile Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Email <em>*</em></label>
+												<input type="email">
+											</div>
+											<div class="seller-row">
+												<label>Country/ Region</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>State</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Area</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Location</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="nestedReturn" role="tabpanel" aria-labelledby="Return-tab">
+										<form class="seller-account-form">
+											<div class="seller-row">
+												<label>Holiday Mode <em>*</em></label>
+												<div class="radio-box">
+													<input type="radio" id="yes" name="radio-group">
+					    							<label for="yes">Yes</label>
+					    						</div>
+												<div class="radio-box">
+													<input type="radio" id="no" name="radio-group">
+					    							<label for="no">No</label>
+					    						</div>
+											</div>
+											<div class="seller-row">
+												<label>First and Last Name <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Address <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Mobile Number <em>*</em></label>
+												<input type="text">
+											</div>
+											<div class="seller-row">
+												<label>Email <em>*</em></label>
+												<input type="email">
+											</div>
+											<div class="seller-row">
+												<label>Country/ Region</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>State</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Area</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											<div class="seller-row">
+												<label>Location</label>
+												<select>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+													<option>Pakistan</option>
+												</select>
+											</div>
+											
+											<div class="btn-holder">
+												<button>Submit</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="Logo" role="tabpanel" aria-labelledby="Logo-tab">
+							<div class="logo-content">
+
+								<input type='file' onchange="readURL(this);" />
+								<div class="blah-holder">
+									<span>Current Logo</span>
+									<img id="blah" src="" alt="your image" />
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="Commissions" role="tabpanel" aria-labelledby="Commissions-tab">
+							<div class="commission-holder">
+								<div class="container" id="no-more-tables">
+								  <p>&nbsp;</p>
+								  <table class="table">
+								    <thead>
+								      <tr class="active">
+								        <th class="col-xs-2"><strong></strong></th>
+								        <th class="col-xs-2"><strong>Category</strong></th>
+								        <th class="col-xs-6"><strong>Commission</strong></th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr role="button" data-toggle="collapse" href="#tr-1" aria-expanded="false" aria-controls="tr-1">
+								        <td>+1</td>
+								        <td>Root Category</td>
+								        <td>2.65</td>
+								      </tr>
+								      <tr>
+								        <td colspan="12" class="hiddenRow">
+								          <div class="collapse next-table" id="tr-1">
+								            <table class="table table-nested">
+								            	<thead>
+											      <tr>
+											        <th>1</th>
+											        <th>Category</th>
+											        <th>Commission</th>
+											      </tr>
+											    </thead>
+								              <tbody>
+
+								                <tr role="button" data-toggle="collapse" href="#tr-1-1" aria-expanded="false" aria-controls="tr-1-1">
+								                	<td>+</td>
+								                  <td class="col-xs-4 col-sm-2 active">11111griculture</td>
+								                  <td>2.65</td>
+								                </tr>
+
+								                <tr><!--2nd level table -->
+											        <td colspan="12" class="hiddenRow">
+											          <div class="collapse next-table" id="tr-1-1">
+											            <table class="table table-nested">
+											            	<thead>
+														      <tr>
+														        <th></th>
+														        <th>Category</th>
+														        <th>Commission</th>
+														      </tr>
+														    </thead>
+											              <tbody>
+											                <tr role="button" data-toggle="collapse" href="#tr-1-2" aria-expanded="false" aria-controls="tr-1-2">
+											                	<td>+</td>
+											                  <td class="col-xs-4 col-sm-2 active">2222Agriculture</td>
+											                  <td>2.65</td>
+											                </tr>
+
+											                <tr><!--third level table -->
+														        <td colspan="12" class="hiddenRow">
+														          <div class="collapse next-table" id="tr-1-2">
+														            <table class="table table-nested">
+														            	<thead>
+																	      <tr>
+																	        <th></th>
+																	        <th>333Category</th>
+																	        <th>Commission</th>
+																	      </tr>
+																	    </thead>
+														              <tbody>
+														                <tr role="button" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="">
+														                	<td>+</td>
+														                  	<td class="col-xs-4 col-sm-2">333</td>
+														                  	<td>2.65</td>
+														                </tr>
+														              </tbody>
+														            </table>
+														          </div>
+														        </td>
+														      </tr><!--third level table -->
+
+											              </tbody>
+											            </table>
+											          </div>
+											        </td>
+											      </tr><!--2nd level table -->
+											      
+								              </tbody>
+								            </table>
+								          </div>
+								        </td>
+								      </tr>
+
+								       <tr role="button" data-toggle="collapse" href="#tr-2" aria-expanded="false" aria-controls="tr-2">
+								        <td>+2</td>
+								        <td>Root Category</td>
+								        <td>2.65</td>
+								      </tr>
+								      <tr>
+								        <td colspan="12" class="hiddenRow">
+								          <div class="collapse next-table" id="tr-2">
+								            <table class="table table-nested">
+								            	<thead>
+											      <tr>
+											        <th>2</th>
+											        <th>Category</th>
+											        <th>Commission</th>
+											      </tr>
+											    </thead>
+								              <tbody>
+
+								                <tr role="button" data-toggle="collapse" href="#tr-2-1" aria-expanded="false" aria-controls="tr-2-1">
+								                	<td>+</td>
+								                  <td class="col-xs-4 col-sm-2 active">11111griculture</td>
+								                  <td>2.65</td>
+								                </tr>
+
+								                <tr><!--2nd level table -->
+											        <td colspan="12" class="hiddenRow">
+											          <div class="collapse next-table" id="tr-2-1">
+											            <table class="table table-nested">
+											            	<thead>
+														      <tr>
+														        <th></th>
+														        <th>Category</th>
+														        <th>Commission</th>
+														      </tr>
+														    </thead>
+											              <tbody>
+											                <tr role="button" data-toggle="collapse" href="#tr-2-2" aria-expanded="false" aria-controls="tr-2-2">
+											                	<td>+</td>
+											                  <td class="col-xs-4 col-sm-2 active">2222Agriculture</td>
+											                  <td>2.65</td>
+											                </tr>
+
+											                <tr><!--third level table -->
+														        <td colspan="12" class="hiddenRow">
+														          <div class="collapse next-table" id="tr-2-2">
+														            <table class="table table-nested">
+														            	<thead>
+																	      <tr>
+																	        <th></th>
+																	        <th>333Category</th>
+																	        <th>Commission</th>
+																	      </tr>
+																	    </thead>
+														              <tbody>
+														                <tr role="button" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="">
+														                	<td>+</td>
+														                  	<td class="col-xs-4 col-sm-2">333</td>
+														                  	<td>2.65</td>
+														                </tr>
+														              </tbody>
+														            </table>
+														          </div>
+														        </td>
+														      </tr><!--third level table -->
+
+											              </tbody>
+											            </table>
+											          </div>
+											        </td>
+											      </tr><!--2nd level table -->
+											      
+								              </tbody>
+								            </table>
+								          </div>
+								        </td>
+								      </tr>
+								      
+								    </tbody>
+								  </table>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="Delivery" role="tabpanel" aria-labelledby="Delivery-tab">
+							<table class="delivery-table">
+								<th>type</th>
+								<th>Avaliable</th>
+								<tbody>
+									<tr>
+										<td>Economy</td>
+										<td><i class="fa fa-times" aria-hidden="true"></i></td>
+									</tr>
+									<tr>
+										<td>Standard</td>
+										<td><i class="fa fa-times" aria-hidden="true"></i></td>
+									</tr>
+									<tr>
+										<td>Express</td>
+										<td><i class="fa fa-times" aria-hidden="true"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade" id="Shipping" role="tabpanel" aria-labelledby="Shipping-tab">
+							<table class="shipping-table">
+								<th>Warehouse ID</th>
+								<th>Shipping Provider</th>
+								<th>Package Profile</th>
+								<th>Type</th>
+								<th>Drop-Off Point Locator</th>
+								<tbody>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade" id="Invoice" role="tabpanel" aria-labelledby="Invoice-tab">
+							<div class="invoice-holder">
+								<label>Generation Type</label>
+								<select>
+									<option>Provide Number Manually</option>
+									<option>Use Autoincrement Number</option>
+									<option>Use Order Number</option>
+								</select>
+							</div>
+							<div class="btn-holder">
+								<button>save</button>
+							</div>
+						</div>
+					</div>
+			  		</div>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">
+			  	<div class="image-block">
+				  	<div class="cs-holder">
+				  		<h1>media center</h1>
+				  		<div class="storage">
+				  			<span>Usage</span>
+				  			<span class="right">0/500 MB</span>
+				  			 <div class="progress">
+							  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+							  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							    <span class="sr-only">70% Complete</span>
+							  </div>
+							</div> 
+				  		</div>
+				  	</div>
+				  	<div class="cs-holder media-gallery">
+						<span>My Gallery</span>
+						<div class="right-holder">
+							<div class="search-holder">
+								<input type="search" name="" placeholder="Please Input Image Name" style="font-size: 12px;">
+								<button><i class="fa fa-search" aria-hidden="true"></i></button>
+							</div>
+							<div class="btn-holder">
+								<div class ="shubox--upload-target" id="shubox--upload-target"></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-frame">
+						<div class="shubox--upload-preview" id="shubox--upload-preview"></div>
+					</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="media1" role="tabpanel" aria-labelledby="media-tab">
+			  	<div class="product-image">
+				  	<div class="cs-holder">
+				  		<h1>Manage Product Image</h1>
+				  	</div>
+				  	<div class="inner-tabs">
+			  		<div class="cs-holder tab-block">
+						<ul class="nav nav-tab" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="nested-home1-tab" data-toggle="tab" href="#nestedHome1" role="tab" aria-controls="home1" aria-selected="true">All</a>
+							</li>
+							<li class="nav-item">
+							  	<a class="nav-link" id="nested-profile1-tab" data-toggle="tab" href="#nestedProfile1" role="tab" aria-controls="profile1" aria-selected="false">Missing Image</a>
+							</li>
+						</ul>
+						<div class="right-holder">
+							<div class="search-holder">
+								<input type="search" name="" placeholder="Please Input Image Name" style="font-size: 12px;">
+								<button><i class="fa fa-search" aria-hidden="true"></i></button>
+							</div>
+							<input type="text" class="brand-name" placeholder="Brand">
+							<select class="brand-select">
+								<option>Export</option>
+								<option>Import</option>
+							</select>
+						</div>
+					</div>
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="nestedHome1" role="tabpanel" aria-labelledby="home1-tab">
+								<div class="table-holder">
+									<table class="img-table">
+										<thead>
+											<th>Product</th>
+											<th>SKU</th>
+											<th>All images</th>
+										</thead>	
+										<tbody>
+											<tr>
+												<td>Product</td>
+												<td>SKU</td>
+												<td>
+													<ul>
+														<li>
+															<img src="images/img23.jpg">
+														</li>
+														<li>
+															<img src="images/img23.jpg">
+														</li>
+														<li>
+															<img src="images/img23.jpg">
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nestedProfile1" role="tabpanel" aria-labelledby="profile1-tab">
+								<div class="table-holder">
+									<table class="img-table">
+										<thead>
+											<th>Product</th>
+											<th>SKU</th>
+											<th>Missing images</th>
+										</thead>	
+										<tbody>
+											<tr>
+												<td>Product</td>
+												<td>SKU</td>
+												<td>
+													<ul>
+														<li>
+															<img src="images/img23.jpg">
+														</li>
+														<li>
+															<img src="images/img23.jpg">
+														</li>
+														<li>
+															<img src="images/img23.jpg">
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="campaign" role="tabpanel" aria-labelledby="campaign-tab">
+			  	<h1>Plateform Campaign</h1>
+			  	<div class="p-tabs compaign-manag">
+			  			<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="Platform-tab" data-toggle="tab" href="#Platform" role="tab" aria-controls="Platform" aria-selected="true">Platform Campaign </a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Voucher-tab" data-toggle="tab" href="#Voucher" role="tab" aria-controls="Voucher" aria-selected="false">Voucher Campaign </a>
+						</li>
+					</ul> -->
+					<div class="tab-content" id="myTabContentt">
+						<div class="tab-pane fade show active" id="Platform" role="tabpanel" aria-labelledby="Platform-tab">
+							<div class="inner-tabs">
+								<ul class="nav nav-tab" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="nested-Available-tab" data-toggle="tab" href="#Available" role="tab" aria-controls="home" aria-selected="true">Available Campaign</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Registered-tab" data-toggle="tab" href="#Registered" role="tab" aria-controls="Registered" aria-selected="false">Registered Campaign</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Ineligible-tab" data-toggle="tab" href="#Ineligible" role="tab" aria-controls="Ineligible" aria-selected="false">Ineligible Campaign</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="Available" role="tabpanel" aria-labelledby="Available-tab">
+										<div class="table-holder">
+											<table>
+												<thead>
+													<th>Campaign Banner</th>
+													<th>Campaign Name</th>
+													<th>Sllers</th>
+													<th>Registration Close In</th>
+													<th>Campaign Live Period</th>
+													<th>Action</th>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<img src="images/img132.jpg" alt="image">
+														</td>
+														<td>
+															11.11 Free Shipping Campaign 10th - 17th Nov (1.0)
+														</td>
+														<td>3325</td>
+														<td></td>
+														<td>
+															Start at 10 Nov 2020 00:00 GMT+05:00
+															<br>
+															End   at 17 Nov 2020 23:59 GMT+05:00
+														</td>
+														<td>
+															<a href="#">Join</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="Registered" role="tabpanel" aria-labelledby="Registered-tab">
+										register
+									</div>
+									<div class="tab-pane fade" id="Ineligible" role="tabpanel" aria-labelledby="Ineligible-tab">
+										ineligible
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="Voucher" role="tabpanel" aria-labelledby="Voucher-tab">
+							Voucher
+						</div>
+					</div>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="voucher-campaign" role="tabpanel" aria-labelledby="voucher-campaign-tab">
+			  	<h1>Voucher Campaign</h1>
+			  	<div class="p-tabs compaign-manag">
+			  			<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="Platform-tab" data-toggle="tab" href="#Platform" role="tab" aria-controls="Platform" aria-selected="true">Platform Campaign </a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" id="Voucher-tab" data-toggle="tab" href="#Voucher" role="tab" aria-controls="Voucher" aria-selected="false">Voucher Campaign </a>
+						</li>
+					</ul> -->
+					<div class="tab-content" id="myTabContentt">
+						<div class="tab-pane fade show active" id="Platform" role="tabpanel" aria-labelledby="Platform-tab">
+							<div class="inner-tabs">
+								<ul class="nav nav-tab" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="nested-Available1-tab" data-toggle="tab" href="#Available1" role="tab" aria-controls="home" aria-selected="true">Available Campaign</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Registered1-tab" data-toggle="tab" href="#Registered1" role="tab" aria-controls="Registered" aria-selected="false">Registered Campaign</a>
+									</li>
+									<li class="nav-item">
+									  	<a class="nav-link" id="nested-Ineligible1-tab" data-toggle="tab" href="#Ineligible1" role="tab" aria-controls="Ineligible" aria-selected="false">Ineligible Campaign</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="Available1" role="tabpanel" aria-labelledby="Available1-tab">
+										<div class="table-holder">
+											<table>
+												<thead>
+													<th>Campaign Banner</th>
+													<th>Campaign Name</th>
+													<th>Sllers</th>
+													<th>Registration Close In</th>
+													<th>Campaign Live Period</th>
+													<th>Action</th>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<img src="images/img132.jpg" alt="image">
+														</td>
+														<td>
+															11.11 Free Shipping Campaign 10th - 17th Nov (1.0)
+														</td>
+														<td>3325</td>
+														<td></td>
+														<td>
+															Start at 10 Nov 2020 00:00 GMT+05:00
+															<br>
+															End   at 17 Nov 2020 23:59 GMT+05:00
+														</td>
+														<td>
+															<a href="#">Join</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="Registered1" role="tabpanel" aria-labelledby="Registered1-tab">
+										register
+									</div>
+									<div class="tab-pane fade" id="Ineligible1" role="tabpanel" aria-labelledby="Ineligible1-tab">
+										ineligible
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="statements" role="tabpanel" aria-labelledby="statements-tab">
+			  	<div class="account-statement">
+				  	<ul class="breadcrumbs">
+				  		<li>
+				  			<a href="#">Home</a>
+				  		</li>
+				  		<li>
+				  			<a href="#">products</a>
+				  		</li>
+				  		<li>Campaign Management</li>
+				  	</ul>
+				  	
+					<div class="cs-holder">
+						<h1>Account Statement</h1>
+						<div class="right-holder">
+							<p>There are no transactions available. Your account statement will appear here once there are transactions recorded.</p>
+						</div>
+					</div>
+					<div class="expiry-box">
+						<div class="info-row">
+							<label>Period</label>
+							<select>
+								<option></option>
+								<option>1</option>
+								<option>1</option>
+								<option>1</option>
+							</select>
+						</div>
+						<div class="btn-holder">
+							<button class="view">View expiry history</button>
+							<button>export</button>
+							<button>print</button>
+						</div>
+					</div>
+					<div class="statement-holder">
+						
+					</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+			  	<div class="overview-order">
+				  	<ul class="breadcrumbs">
+				  		<li>
+				  			<a href="#">Home</a>
+				  		</li>
+				  		<li>
+				  			<a href="#">products</a>
+				  		</li>
+				  		<li>Order Overview</li>
+				  	</ul>
+				  	
+					<div class="cs-holder">
+						<h1>Order Overview</h1>
+					</div>
+					<div class="tab-holder">
+			  		<ul class="nav nav-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#photo1" role="tab">All</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#pending" role="tab">Pending</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#ship" role="tab">Ready to Ship</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#shiped" role="tab">Shiped</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#delivered" role="tab">Deliverred</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#cancelled" role="tab">Cancelled</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#returned" role="tab">Returned</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#failed" role="tab">Failed Delivery</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="photo1" role="tabpanel">
+							<form class="search-block">
+								<div class="search-row">
+									<input type="text" placeholder="Order Number">
+									<input type="text" placeholder="Customer">
+									<input type="text" placeholder="Product">
+									<select>
+										<option>Select Tag</option>
+										<option>Select Tag</option>
+										<option>Select Tag</option>
+									</select>
+									<input type="text" placeholder="Seller SKU">
+								</div>
+								<div class="search-row">
+									<input type="text" placeholder="Payment">
+									<input type="text" placeholder="Fulfiment">
+									<input type="text" placeholder="Delivery Option">
+							        <input id="startDate" name="startDate" type="text" class="s-date" placeholder="Start Date" />
+							        &nbsp;
+							        <input id="endDate" name="endDate" type="text" class="e-date" placeholder="End Date"/>
+								</div>
+								<button>Search</button>
+							</form>
+							<div class="overview-table">
+								<select>
+									<option>Export</option>
+									<option>Export</option>
+									<option>Export</option>
+								</select>
+								<select>
+									<option>Import</option>
+									<option>Import</option>
+									<option>Export</option>
+								</select>
+								<select>
+									<option>Print</option>
+									<option>Print</option>
+									<option>Print</option>
+								</select>
+								<select>
+									<option>Set Status</option>
+									<option>Set Status</option>
+									<option>Set Status</option>
+								</select>
+								<select>
+									<option>View History</option>
+									<option>View History</option>
+									<option>View History</option>
+								</select>
+							</div>
+							<div class="table-holder">
+								<table>
+									<thead>
+										<th>Document</th>
+										<th>Order No.</th>
+										<th>Order Date</th>
+										<th>Update Date</th>
+										<th>Payment Method</th>
+										<th>Retail Price</th>
+										<th>#</th>
+										<th>Status</th>
+										<th>Printed</th>
+										<th>Action</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="tab-pane" id="pending" role="tabpanel">2</div>
+						<div class="tab-pane" id="ship" role="tabpanel">3</div>
+						<div class="tab-pane" id="shiped" role="tabpanel">4</div>
+						<div class="tab-pane" id="delivered" role="tabpanel">5</div>
+						<div class="tab-pane" id="cancelled" role="tabpanel">6</div>
+						<div class="tab-pane" id="returned" role="tabpanel">7</div>
+						<div class="tab-pane" id="failed" role="tabpanel">8</div>
+					</div>
+			  	</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="transaction" role="tabpanel" aria-labelledby="transaction-tab">
+			  	<h1>transation overview</h1>
+			  	<div class="transation-overview">
+			  		<div class="left-trans">
+			  			<div class="date-box">
+				  			<label>Periode</label>
+				  			<input type="text" id="fromDate">
+				  			<em>To</em>
+							<input type="text" id="toDate">
+						</div>
+						<div class="trans-filter">
+							<label>Filter Transaction</label>
+							<select>
+								<option>All Transaction</option>
+								<option>All Transaction</option>
+								<option>All Transaction</option>
+							</select>
+							<select class="last"> 
+								<option>Select</option>
+								<option>Select</option>
+								<option>Select</option>
+							</select>
+							<button>Search</button>
+						</div>
+			  		</div>
+			  		<div class="right-trans">
+			  			<a href="#" class="history">View Export History</a>
+			  			<a href="#" class="export">Export</a>
+			  		</div>
+			  	</div>
+			  	<div class="table-holder">
+			  		<table>
+			  			<thead>
+			  				<th>Date</th>
+			  				<th>Transaction Type</th>
+			  				<th>Transaction Number</th>
+			  				<th>Order Number</th>
+			  				<th>Details</th>
+			  				<th>Comments</th>
+			  				<th>Amount</th>
+			  				<th>VAT</th>
+			  				<th>WHT</th>
+			  				<th>Statement</th>
+			  			</thead>
+			  			<tbody>
+			  				<tr>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  					<td></td>
+			  				</tr>
+			  			</tbody>
+			  		</table>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="management" role="tabpanel" aria-labelledby="management-tab">
+			  	<ul class="breadcrumbs">
+			  		<li>
+			  			<a href="#">Home</a>
+			  		</li>
+			  		<li>
+			  			<a href="#">products</a>
+			  		</li>
+			  		<li>Manage user</li>
+			  	</ul>
+			  	<h1>Manage user</h1>
+				<div class="cs-holder">
+					<div class="right-holder">
+						<div class="btn-holder">
+							<button class="add user">+ add user</button>
+						</div>
+					</div>
+				</div>
+			  	<div class="tab-holder">
+					<div class="tab-content">
+						<h3 class="user-heading">manage users</h3>
+						<div class="table-holder">
+							<table class="user-table">
+								<thead>
+									<th>email</th>
+									<th>role</th>
+									<th>user name</th>
+									<th>status</th>
+									<th>Action</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>usman_ghani@yahoo.com</td>
+										<td>seller full access</td>
+										<td>EastAccess</td>
+										<td>active</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>usman_ghani@yahoo.com</td>
+										<td>seller full access</td>
+										<td>EastAccess</td>
+										<td>active</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+			  	<ul class="breadcrumbs">
+			  		<li>
+			  			<a href="#">Home</a>
+			  		</li>
+			  		<li>
+			  			<a href="#">products</a>
+			  		</li>
+			  		<li>account settings</li>
+			  	</ul>
+			  	<h1>account setting</h1>
+			  	<div class="tab-holder">
+			  		<ul class="nav nav-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#photo" role="tab">Change Profile Photo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#Password" role="tab">Change Password</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="photo" role="tabpanel">
+							<div class="photo-box">
+								<h1>change Profile Photo</h1>
+								<div class="photo-upload">
+									<div class="file-upload">
+										
+										<div class="image-upload-wrap">
+										    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+										    <div class="drag-text">
+										      <h3>+</h3>
+										    </div>
+										  </div>
+										  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">
+											Please Select Your Photo
+										</button>
+										  <div class="file-upload-content">
+										    <img class="file-upload-image" src="#" alt="your image" />
+										    <div class="image-title-wrap">
+										      <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+										    </div>
+										  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="Password" role="tabpanel">
+							<h1>change Password</h1>
+							<form class="password-form" accept="#">
+								<div class="pass-row">
+									<label>email address</label>
+									<input type="text" name="">
+								</div>
+								<div class="pass-row">
+									<label>old password</label>
+									<input type="password" name="">
+								</div>
+								<div class="pass-row">
+									<label>new password</label>
+									<input type="password" name="">
+								</div>
+								<div class="pass-row">
+									<label>repeat password</label>
+									<input type="password" name="">
+								</div>
+								<div class="pass-btn">
+									<button>save changes</button>
+								</div>
+							</form>
+						</div>
+					</div>
+			  	</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+			  	<ul class="breadcrumbs">
+			  		<li>
+			  			<a href="#">Home</a>
+			  		</li>
+			  		<li>
+			  			<a href="#">products</a>
+			  		</li>
+			  		<li>chat settings</li>
+			  	</ul>
+			  	<h1>chat setting</h1>
+			  	<div class="tab-holder">
+			  		<ul class="nav nav-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#user-managment" role="tab">user managment</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#quick-reply" role="tab">quick reply</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#auto-reply" role="tab">auto reply</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#notification" role="tab">notification</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="user-managment" role="tabpanel">
+							<div class="cs-holder">
+								<h1>customer support</h1>
+								<div class="right-holder">
+									<div class="search-holder">
+										<input type="search" name="">
+										<button><i class="fa fa-search" aria-hidden="true"></i></button>
+									</div>
+									<div class="btn-holder">
+										<button class="add">+ add user</button>
+										<button class="remove">remove</button>
+									</div>
+								</div>
+							</div>
+							<div class="admin_holder">
+								<span>Admin</span>
+								<span>usman_ghani940@yahoo.com</span>
+								<div class="working-holder">
+									<div class="time-holder">
+										<input type="time" name="">
+										<input type="time" name="">
+									</div>
+									<div class="select-holder">
+										<label>working hours</label>
+										<select>
+											<option>On Weekday</option>
+											<option>On Weekday</option>
+											<option>On Weekday</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<table class="support-table" action="#">
+								<thead>
+									<th>
+										<input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+										<label for="styled-checkbox-1">Email</label>
+									</th>
+									<th>
+										user name
+									</th>
+									<th>
+										action
+									</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+											<label for="styled-checkbox-2">usman_ghani940@yahoo.com</label>
+										</td>
+										<td>EasyAccess</td>
+										<td>
+											<a href="#">remove</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane" id="quick-reply" role="tabpanel">
+							<div class="cs-holder">
+								<h1>quick replies</h1>
+								<div class="right-holder">
+									<div class="btn-holder">
+										<button class="add">+ add option</button>
+									</div>
+								</div>
+							</div>
+							<form class="q-rply" action="#">
+								<div class="text-box">
+									<textarea></textarea>
+									<span>0/200</span>
+								</div>
+								<div class="text-box">
+									<textarea></textarea>
+									<span>0/200</span>
+								</div>
+								<div class="text-box">
+									<textarea></textarea>
+									<span>0/200</span>
+								</div>
+								<div class="pass-btn">
+									<button>submit</button>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="auto-reply" role="tabpanel">
+							<div class="cs-holder">
+								<h1>auto replies</h1>
+								<div class="right-holder">
+									<div class="btn-holder">
+										<button class="add">+ add option</button>
+									</div>
+								</div>
+							</div>
+							<form class="q-rply" action="#">
+								<div class="text-box">
+									<div class="text-frame">
+										<span>Auto Reply (When receiving a message)</span>
+										<div class="radio-box">
+											<input type="radio" id="test1" name="radio-group">
+    										<label for="test1">yes</label>
+    										<input type="radio" id="test2" name="radio-group">
+    										<label for="test2">No</label>
+										</div>
+									</div>
+									<textarea></textarea>
+									<span>0/200</span>
+								</div>
+								<div class="text-box">
+									<div class="text-frame">
+										<span>Auto Reply (When receiving a message)</span>
+										<div class="radio-box">
+											<input type="radio" id="test3" name="radio-group">
+    										<label for="test3">yes</label>
+    										<input type="radio" id="test4" name="radio-group">
+    										<label for="test4">No</label>
+										</div>
+									</div>
+									<textarea></textarea>
+									<span>0/200</span>
+								</div>
+								<div class="text-box">
+									<div class="text-frame">
+										<span>Auto Reply (When receiving a message)</span>
+										<div class="radio-box">
+											<input type="radio" id="test5" name="radio-group">
+    										<label for="test5">yes</label>
+    										<input type="radio" id="test6" name="radio-group">
+    										<label for="test6">No</label>
+										</div>
+									</div>
+									<textarea></textarea>
+									<span>0/200</span>
+								</div>
+								<div class="pass-btn">
+									<button>submit</button>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="notification" role="tabpanel">
+							<div class="cs-holder">
+								<h1>notifications</h1>
+							</div>
+							<form class="q-rply" action="#">
+								<div class="text-box">
+									<div class="text-frame notification">
+										<span>Auto Reply (When receiving a message)</span>
+										<div class="radio-box">
+											<input type="radio" id="test7" name="radio-group">
+    										<label for="test7">yes</label>
+    										<input type="radio" id="test8" name="radio-group">
+    										<label for="test8">No</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="pass-btn">
+									<button>submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+			  	</div>
+			  </div>
+
+			  
+			  <div class="suppotr_center">
+			  	<span>Need some assistance? Visit our <a href="#">Support Center</a> or contact your <a href="#">Customer Success</a> Manager.</span>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<!-- Modal -->
+<div class="modal fade" id="accountmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<div class="modal-columns">
+      		<div class="column-left">
+      			<img src="images/img175.png" alt="image">
+      		</div>
+      		<div class="column-right">
+      			<h2>Your Account Activation Proccessed</h2>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      			<button type="button" class="modal-btn" data-dismiss="modal">OK</button>
+      		</div>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://unpkg.com/shubox@0.4.4/dist/shubox.umd.js"></script>
+    <script src="https://codepen.io/nerdpruitt/pen/oYPMJM"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+	<script>
+		function readURL(input) {
+		  if (input.files && input.files[0]) {
+
+		    var reader = new FileReader();
+
+		    reader.onload = function(e) {
+		      $('.image-upload-wrap').hide();
+
+		      $('.file-upload-image').attr('src', e.target.result);
+		      $('.file-upload-content').show();
+
+		      $('.image-title').html(input.files[0].name);
+		    };
+
+		    reader.readAsDataURL(input.files[0]);
+
+		  } else {
+		    removeUpload();
+		  }
+		}
+
+		function removeUpload() {
+		  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+		  $('.file-upload-content').hide();
+		  $('.image-upload-wrap').show();
+		}
+		$('.image-upload-wrap').bind('dragover', function () {
+		        $('.image-upload-wrap').addClass('image-dropping');
+		    });
+		    $('.image-upload-wrap').bind('dragleave', function () {
+		        $('.image-upload-wrap').removeClass('image-dropping');
+		});
+
+	</script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor1' );
+      CKEDITOR.add            
+   </script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor2' );
+      CKEDITOR.add            
+   </script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor3' );
+      CKEDITOR.add            
+   </script>
+   <script>
+   	$('.slick-carousel').slick({
+		  dots: false,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 4,
+		  slidesToScroll: 4,
+		  responsive: [
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        dots: false
+		      }
+		    },
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 576,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
+		});
+   </script>
+   <script>
+   	$("ul.nav-tab a").click(function (e) {
+	  e.preventDefault();  
+	    $(this).tab('show');
+	});
+   </script>
+        <script>
+  $(function() {
+  $('#datetimepicker1').datetimepicker({
+    language: 'pt-BR'
+  });
+});
+</script>
+<script>
+     function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<script>
+	// Use an adjacent `previewsContainer` to
+// display the photo thumbnails, their upload
+// progress, and success or failure state
+
+uploader = new Shubox("#shubox--upload-target", {
+  key: "7e1e4069",
+  transformName: 'multi-upload',
+  previewsContainer: '#shubox--upload-preview',
+  addedfile: function(){ console.log('added') },
+  success: function(){ console.log('file uploaded') },
+  queuecomplete: function(){ console.log('done') },
+  s3Key: "multis/{{filename}}",
+  transformCallbacks: {
+    ".webp": function(shuboxFile) {
+      console.log(shuboxFile.transforms[".webp"].s3url);
+    },
+    "200x200#": function(shuboxFile) {
+      console.log(shuboxFile.transforms["200x200#"].s3url);
+    },
+    "400x400": function(shuboxFile) {
+      console.log(shuboxFile.transforms["400x400"].s3url);
+    },
+    "800x800": function(shuboxFile) {
+      console.log(shuboxFile.transforms["800x800"].s3url);
+    }
+  }
+})
+</script>
+<script>
+		var bindDateRangeValidation = function (f, s, e) {
+    if(!(f instanceof jQuery)){
+			console.log("Not passing a jQuery object");
+    }
+  
+    var jqForm = f,
+        startDateId = s,
+        endDateId = e;
+  
+    var checkDateRange = function (startDate, endDate) {
+        var isValid = (startDate != "" && endDate != "") ? startDate <= endDate : true;
+        return isValid;
+    }
+
+    var bindValidator = function () {
+        var bstpValidate = jqForm.data('bootstrapValidator');
+        var validateFields = {
+            startDate: {
+                validators: {
+                    notEmpty: { message: 'This field is required.' },
+                    callback: {
+                        message: 'Start Date must less than or equal to End Date.',
+                        callback: function (startDate, validator, $field) {
+                            return checkDateRange(startDate, $('#' + endDateId).val())
+                        }
+                    }
+                }
+            },
+            endDate: {
+                validators: {
+                    notEmpty: { message: 'This field is required.' },
+                    callback: {
+                        message: 'End Date must greater than or equal to Start Date.',
+                        callback: function (endDate, validator, $field) {
+                            return checkDateRange($('#' + startDateId).val(), endDate);
+                        }
+                    }
+                }
+            },
+          	customize: {
+                validators: {
+                    customize: { message: 'customize.' }
+                }
+            }
+        }
+        if (!bstpValidate) {
+            jqForm.bootstrapValidator({
+                excluded: [':disabled'], 
+            })
+        }
+      
+        jqForm.bootstrapValidator('addField', startDateId, validateFields.startDate);
+        jqForm.bootstrapValidator('addField', endDateId, validateFields.endDate);
+      
+    };
+
+    var hookValidatorEvt = function () {
+        var dateBlur = function (e, bundleDateId, action) {
+            jqForm.bootstrapValidator('revalidateField', e.target.id);
+        }
+
+        $('#' + startDateId).on("dp.change dp.update blur", function (e) {
+            $('#' + endDateId).data("DateTimePicker").setMinDate(e.date);
+            dateBlur(e, endDateId);
+        });
+
+        $('#' + endDateId).on("dp.change dp.update blur", function (e) {
+            $('#' + startDateId).data("DateTimePicker").setMaxDate(e.date);
+            dateBlur(e, startDateId);
+        });
+    }
+
+    bindValidator();
+    hookValidatorEvt();
+};
+
+
+$(function () {
+    var sd = new Date(), ed = new Date();
+  
+    $('#startDate').datetimepicker({ 
+      pickTime: false, 
+      format: "YYYY/MM/DD", 
+      defaultDate: sd, 
+      maxDate: ed 
+    });
+  
+    $('#endDate').datetimepicker({ 
+      pickTime: false, 
+      format: "YYYY/MM/DD", 
+      defaultDate: ed, 
+      minDate: sd 
+    });
+
+    //passing 1.jquery form object, 2.start date dom Id, 3.end date dom Id
+    bindDateRangeValidation($("#form"), 'startDate', 'endDate');
+});
+</script>
+<script>
+	$(document).ready(function(){
+   $("#fromDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+       var minDate = new Date(selected.date.valueOf());
+       $('#toDate').datepicker('setStartDate', minDate);
+   });
+
+   $("#toDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+           var minDate = new Date(selected.date.valueOf());
+           $('#fromDate').datepicker('setEndDate', minDate);
+   });
+});
+</script>
+
+</html> 

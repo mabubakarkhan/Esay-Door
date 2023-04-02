@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seller Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div class="seller-header">
+			<div class="fluid-container">
+				<a class="seller-logo">
+					<img src="images/logo.png" alt="logo">
+				</a>
+				<div class="right-panel">
+					<a class="email" href="mailto:info@easydoor.com">info@easydoor.com</a>
+					<a class="access" href="#">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+						Easy Access
+						<i class="fa fa-sort-desc" aria-hidden="true"></i>
+					</a>
+				</div> 
+			</div>    
+		</div>
+		<div class="dashbord-content">
+			<div class="left-bar">
+				<div id="accordion" class="myaccordion">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				        	<img src="images/bg-dashboard.png">
+				        	Dashboard
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				    	<div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Dashboard</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        	<img src="images/bg-product.png" alt="image">
+				          	Products
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Manage Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Add Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Media Center</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Manage image</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				        	<img src="images/bg-promotions.png" alt="image">
+				          	Promotions
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				          <li class="nav-item">
+								<a class="nav-link" href="#">Plateform campaign</a>
+							</li>
+				          <li class="nav-item">
+								<a class="nav-link"href="#">Voucher campaign</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree1">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link show active" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="true" aria-controls="collapseThree1">
+				        	<img src="images/bg-finance.png" alt="image">
+				          	Finance
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Account statements</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Order overview</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Transaction overview</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree11">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree11" aria-expanded="false" aria-controls="collapseThree11">
+				        	<img src="images/bg-account.png" alt="image">
+				          	Account & Settings
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree11" class="collapse show active" aria-labelledby="headingThree11" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Profile</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">User Management</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Account settings</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Chat settings</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link show active" href="#">Add Card</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="tab-content" id="myTabContent">
+				
+				<div class="tab-pane fade show active" id="statements" role="tabpanel" aria-labelledby="statements-tab">
+			  	<div class="account-statement">
+				  	<ul class="breadcrumbs">
+				  		<li>
+				  			<a href="#">Home</a>
+				  		</li>
+				  		<li>
+				  			<a href="#">products</a>
+				  		</li>
+				  		<li>Account Settings</li>
+				  	</ul>
+				  	
+					<div class="cs-holder">
+						<h1>Add Card Detail</h1>
+						<div class="card-detail-box">
+							<div class="form_holder">
+								<div class="img-holder">
+									<img src="images/img178.png" alt="image">
+								</div>
+								<form action="#">
+									<div class="card-row">
+										<label>Card Number</label>
+										<input type="text" placeholder="Card Number">
+									</div>
+									<div class="card-row">
+										<label>Full Name</label>
+										<input type="text" placeholder="Full Name">
+									</div>
+									<div class="card-row">
+										<label>Expiry</label>
+										<input type="text" placeholder="/">
+									</div>
+									<div class="card-row">
+										<label>CVC</label>
+										<input type="text" placeholder="CVC">
+									</div>
+									<div class="card-row">
+										<label>Company</label>
+										<input type="text" placeholder="Select Company">
+									</div>
+									<div class="card-row">
+										<label>Status</label>
+										<input type="text" placeholder="Active">
+									</div>
+									<div class="card-btn">
+										<a class="submit" href="#">Submit</a>
+										<a class="cancel" href="#">Cancel</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  
+			  <div class="suppotr_center">
+			  	<span>Need some assistance? Visit our <a href="#">Support Center</a> or contact your <a href="#">Customer Success</a> Manager.</span>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+</html> 

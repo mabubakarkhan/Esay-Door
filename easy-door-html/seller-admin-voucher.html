@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seller Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div class="seller-header">
+			<div class="fluid-container">
+				<a class="seller-logo">
+					<img src="images/logo.png" alt="logo">
+				</a>
+				<div class="right-panel">
+					<a class="email" href="mailto:info@easydoor.com">info@easydoor.com</a>
+					<a class="access" href="#">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+						Easy Access
+						<i class="fa fa-sort-desc" aria-hidden="true"></i>
+					</a>
+				</div> 
+			</div>    
+		</div>
+		<div class="dashbord-content">
+			<div class="left-bar">
+				<div id="accordion" class="myaccordion">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				        	<img src="images/bg-dashboard.png">
+				        	Dashboard
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				    	<div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Dashboard</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        	<img src="images/bg-product.png" alt="image">
+				          	Products
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Manage Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Add Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Media Center</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Manage image</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link show active" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+				        	<img src="images/bg-promotions.png" alt="image">
+				          	Promotions
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse show active" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				          <li class="nav-item">
+								<a class="nav-link" href="#">Plateform campaign</a>
+							</li>
+				          <li class="nav-item">
+								<a class="nav-link show active"href="#">Voucher campaign</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree1">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+				        	<img src="images/bg-finance.png" alt="image">
+				          	Finance
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				        	<li class="nav-item">
+								<a class="nav-link" href="#">Account statements</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Order overview</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Transaction overview</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree11">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree11" aria-expanded="false" aria-controls="collapseThree11">
+				        	<img src="images/bg-account.png" alt="image">
+				          	Account & Settings
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree11" class="collapse" aria-labelledby="headingThree11" data-parent="#accordion">
+				      <div class="card-body">
+				        <ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Profile</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">User Management</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Account settings</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Chat settings</a>
+							</li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="tab-content" id="myTabContent">
+				
+				<div class="tab-pane fade show active" id="voucher-campaign" role="tabpanel" aria-labelledby="voucher-campaign-tab">
+			  	<h1>Voucher</h1>
+			  	<div class="v-box">
+			  		<strong>Your Orders</strong>
+				  	<div class="table-holder">
+						<table class="platform-table">
+							<thead>
+								<th>Order #</th>
+								<th>Placed On</th>
+								<th>Items</th>
+								<th>Discount</th>
+								<th>Total</th>
+								<th>Status</th>
+								<th>Action</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										41
+									</td>
+									<td>
+										01-09-2021
+									</td>
+									<td>
+										<img src="images/img159.jpg" alt="image">
+									</td>
+									<td>
+										10%
+									</td>
+									<td>Rs: 20,000</td>
+									<td>
+										Delivered
+									</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size: 20px;"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										41
+									</td>
+									<td>
+										01-09-2021
+									</td>
+									<td>
+										<img src="images/img159.jpg" alt="image">
+									</td>
+									<td>
+										10%
+									</td>
+									<td>Rs: 20,000</td>
+									<td>
+										Delivered
+									</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size: 20px;"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										41
+									</td>
+									<td>
+										01-09-2021
+									</td>
+									<td>
+										<img src="images/img159.jpg" alt="image">
+									</td>
+									<td>
+										10%
+									</td>
+									<td>Rs: 20,000</td>
+									<td>
+										Delivered
+									</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size: 20px;"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										41
+									</td>
+									<td>
+										01-09-2021
+									</td>
+									<td>
+										<img src="images/img159.jpg" alt="image">
+									</td>
+									<td>
+										10%
+									</td>
+									<td>Rs: 20,000</td>
+									<td>
+										Delivered
+									</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size: 20px;"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			  </div>
+			  
+			  <div class="suppotr_center">
+			  	<span>Need some assistance? Visit our <a href="#">Support Center</a> or contact your <a href="#">Customer Success</a> Manager.</span>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://unpkg.com/shubox@0.4.4/dist/shubox.umd.js"></script>
+    <script src="https://codepen.io/nerdpruitt/pen/oYPMJM"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+	<script>
+		function readURL(input) {
+		  if (input.files && input.files[0]) {
+
+		    var reader = new FileReader();
+
+		    reader.onload = function(e) {
+		      $('.image-upload-wrap').hide();
+
+		      $('.file-upload-image').attr('src', e.target.result);
+		      $('.file-upload-content').show();
+
+		      $('.image-title').html(input.files[0].name);
+		    };
+
+		    reader.readAsDataURL(input.files[0]);
+
+		  } else {
+		    removeUpload();
+		  }
+		}
+
+		function removeUpload() {
+		  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+		  $('.file-upload-content').hide();
+		  $('.image-upload-wrap').show();
+		}
+		$('.image-upload-wrap').bind('dragover', function () {
+		        $('.image-upload-wrap').addClass('image-dropping');
+		    });
+		    $('.image-upload-wrap').bind('dragleave', function () {
+		        $('.image-upload-wrap').removeClass('image-dropping');
+		});
+
+	</script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor1' );
+      CKEDITOR.add            
+   </script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor2' );
+      CKEDITOR.add            
+   </script>
+	<script type="text/javascript">
+      CKEDITOR.replace( 'editor3' );
+      CKEDITOR.add            
+   </script>
+   <script>
+   	$().ready(function(){
+	  $('.slick-carousel').slick({
+	    arrows: true,
+	    rows: 2,
+	    slidesPerRow: 3,
+	    centerPadding: "0px",
+	    dots: false,
+	   // autoplay:true,
+	    slidesToShow: 3,
+        speed: 300,
+        slidesToScroll: 1,
+        infinite: true,
+	    touchThreshold: 500,
+	    infinite: false
+	  });
+	});
+				// $().ready(function(){
+				//   $('.slick-carousel').slick({
+		  //           dots: false,
+		  //           infinite: true,
+		  //           speed: 300,
+		  //           slidesToShow: 4,
+		  //           slidesToScroll: 4,
+		  //           responsive: [{
+		  //               breakpoint: 1200,
+		  //               settings: {
+		  //                   slidesToShow: 4,
+		  //                   slidesToScroll: 4,
+		  //                   infinite: true,
+		  //                   dots: true
+		  //               }
+		  //           }, {
+		  //               breakpoint: 992,
+		  //               settings: {
+		  //                   slidesToShow: 3,
+		  //                   slidesToScroll: 3
+		  //               }
+		  //           }, {
+		  //               breakpoint: 768,
+		  //               settings: {
+		  //                   slidesToShow: 3,
+		  //                   slidesToScroll: 3
+		  //               }
+		  //           }, {
+		  //               breakpoint: 480,
+		  //               settings: {
+		  //                   slidesToShow: 2,
+		  //                   slidesToScroll: 2
+		  //               }
+		  //           }]
+		  //       });
+		  //   }
+   </script>
+   <script>
+   	$("ul.nav-tabs a").click(function (e) {
+	  e.preventDefault();  
+	    $(this).tab('show');
+	});
+   </script>
+        <script>
+  $(function() {
+  $('#datetimepicker1').datetimepicker({
+    language: 'pt-BR'
+  });
+});
+</script>
+<script>
+     function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<script>
+	// Use an adjacent `previewsContainer` to
+// display the photo thumbnails, their upload
+// progress, and success or failure state
+
+uploader = new Shubox("#shubox--upload-target", {
+  key: "7e1e4069",
+  transformName: 'multi-upload',
+  previewsContainer: '#shubox--upload-preview',
+  addedfile: function(){ console.log('added') },
+  success: function(){ console.log('file uploaded') },
+  queuecomplete: function(){ console.log('done') },
+  s3Key: "multis/{{filename}}",
+  transformCallbacks: {
+    ".webp": function(shuboxFile) {
+      console.log(shuboxFile.transforms[".webp"].s3url);
+    },
+    "200x200#": function(shuboxFile) {
+      console.log(shuboxFile.transforms["200x200#"].s3url);
+    },
+    "400x400": function(shuboxFile) {
+      console.log(shuboxFile.transforms["400x400"].s3url);
+    },
+    "800x800": function(shuboxFile) {
+      console.log(shuboxFile.transforms["800x800"].s3url);
+    }
+  }
+})
+</script>
+<script>
+		var bindDateRangeValidation = function (f, s, e) {
+    if(!(f instanceof jQuery)){
+			console.log("Not passing a jQuery object");
+    }
+  
+    var jqForm = f,
+        startDateId = s,
+        endDateId = e;
+  
+    var checkDateRange = function (startDate, endDate) {
+        var isValid = (startDate != "" && endDate != "") ? startDate <= endDate : true;
+        return isValid;
+    }
+
+    var bindValidator = function () {
+        var bstpValidate = jqForm.data('bootstrapValidator');
+        var validateFields = {
+            startDate: {
+                validators: {
+                    notEmpty: { message: 'This field is required.' },
+                    callback: {
+                        message: 'Start Date must less than or equal to End Date.',
+                        callback: function (startDate, validator, $field) {
+                            return checkDateRange(startDate, $('#' + endDateId).val())
+                        }
+                    }
+                }
+            },
+            endDate: {
+                validators: {
+                    notEmpty: { message: 'This field is required.' },
+                    callback: {
+                        message: 'End Date must greater than or equal to Start Date.',
+                        callback: function (endDate, validator, $field) {
+                            return checkDateRange($('#' + startDateId).val(), endDate);
+                        }
+                    }
+                }
+            },
+          	customize: {
+                validators: {
+                    customize: { message: 'customize.' }
+                }
+            }
+        }
+        if (!bstpValidate) {
+            jqForm.bootstrapValidator({
+                excluded: [':disabled'], 
+            })
+        }
+      
+        jqForm.bootstrapValidator('addField', startDateId, validateFields.startDate);
+        jqForm.bootstrapValidator('addField', endDateId, validateFields.endDate);
+      
+    };
+
+    var hookValidatorEvt = function () {
+        var dateBlur = function (e, bundleDateId, action) {
+            jqForm.bootstrapValidator('revalidateField', e.target.id);
+        }
+
+        $('#' + startDateId).on("dp.change dp.update blur", function (e) {
+            $('#' + endDateId).data("DateTimePicker").setMinDate(e.date);
+            dateBlur(e, endDateId);
+        });
+
+        $('#' + endDateId).on("dp.change dp.update blur", function (e) {
+            $('#' + startDateId).data("DateTimePicker").setMaxDate(e.date);
+            dateBlur(e, startDateId);
+        });
+    }
+
+    bindValidator();
+    hookValidatorEvt();
+};
+
+
+$(function () {
+    var sd = new Date(), ed = new Date();
+  
+    $('#startDate').datetimepicker({ 
+      pickTime: false, 
+      format: "YYYY/MM/DD", 
+      defaultDate: sd, 
+      maxDate: ed 
+    });
+  
+    $('#endDate').datetimepicker({ 
+      pickTime: false, 
+      format: "YYYY/MM/DD", 
+      defaultDate: ed, 
+      minDate: sd 
+    });
+
+    //passing 1.jquery form object, 2.start date dom Id, 3.end date dom Id
+    bindDateRangeValidation($("#form"), 'startDate', 'endDate');
+});
+</script>
+<script>
+	$(document).ready(function(){
+   $("#fromDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+       var minDate = new Date(selected.date.valueOf());
+       $('#toDate').datepicker('setStartDate', minDate);
+   });
+
+   $("#toDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+           var minDate = new Date(selected.date.valueOf());
+           $('#fromDate').datepicker('setEndDate', minDate);
+   });
+});
+</script>
+
+</html> 
